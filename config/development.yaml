@@ -1,0 +1,8 @@
+service:
+  domain:
+    implementation: "redis"
+    host: "0.0.0.0"
+    port: "8080"
+    database: 0
+    username: "user"
+    password: #pass

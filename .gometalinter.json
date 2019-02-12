@@ -1,0 +1,12 @@
+{
+    "Deadline": "1m",
+    "Disable": [
+        "gocyclo",
+        "gosec",
+        "errcheck",
+        "interfacer"
+    ],
+    "Skip": [
+      "vendor"
+    ]
+}
