@@ -38,6 +38,7 @@ func (c *controller) GetNeighborhood(ctx *gin.Context) {
 	if neighborhoodID == "" {
 		ctx.JSON(500, gin.H{"error": "nil neighborhood_id"})
 		ctx.Abort()
+
 		return
 	}
 	// TODO: handle errors properly
@@ -47,5 +48,6 @@ func (c *controller) GetNeighborhood(ctx *gin.Context) {
 	}
 
 	ctx.JSON(200, gin.H{"neighborhood": neighborhood})
+
 	return
 }

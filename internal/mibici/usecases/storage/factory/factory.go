@@ -21,6 +21,7 @@ func New(rawConfig map[string]interface{}, dbService db.Service) (storage.Storag
 		if err != nil {
 			return nil, fmt.Errorf("error creating %s storage: %v", redisID, err)
 		}
+
 		return redis.New(db)
 	}
 
