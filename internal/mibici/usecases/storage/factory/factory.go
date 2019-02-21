@@ -13,7 +13,7 @@ const (
 	redisID = "redis"
 )
 
-// New creates a new policy storage based on an implementation and config
+// New creates a new mibici storage based on an implementation and config
 func New(rawConfig map[string]interface{}, dbService db.Service) (storage.Storage, error) {
 	implementation := rawConfig["implementation"].(string)
 	if implementation == redisID {
