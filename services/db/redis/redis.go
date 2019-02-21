@@ -22,6 +22,11 @@ type service struct{}
 
 var _ db.Service = &service{}
 
+// New is a new redis db instance
+func New() (db.Service, error) {
+	return &service{}, nil
+}
+
 // Connection returns a new client connection
 func (s *service) Connection(rawConfig map[string]interface{}) (*redis.Client, error) {
 	config := &redisConfig{}
@@ -48,6 +53,7 @@ func (s *service) Connection(rawConfig map[string]interface{}) (*redis.Client, e
 		DB:       config.Database,
 	})
 
+	// prove if the connection is stablished
 	if _, err := client.Ping().Result(); err != nil {
 		return nil, errors.New("Invalid redis connection")
 	}
