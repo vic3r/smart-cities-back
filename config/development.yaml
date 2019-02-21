@@ -1,8 +1,13 @@
-service:
-  domain:
-    implementation: "redis"
-    host: "0.0.0.0"
-    port: "8080"
-    database: 0
-    username: "user"
-    password: #pass
+api:
+  host: "127.0.0.1"
+  port: 8080
+
+domains:
+  mibici:
+    storage:
+      implementation: "redis"
+      host: "0.0.0.0"
+      port: "8080"
+      database: 0
+      username: "user"
+      password: #pass

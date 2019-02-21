@@ -1,8 +1,13 @@
-service:
-  domain:
-    implementation: "DB_IMPLEMENTATION"
-    host: "DB_HOST"
-    port: "DB_PORT"
-    database: "DB_NAME"
-    username: "DB_USERNAME"
-    password: "DB_PASSWORD"
+api:
+  host: "API_HOST"
+  port: "API_PORT"
+
+domains:
+  mibici:
+    storage:
+      implementation: "DB_IMPLEMENTATION"
+      host: "DB_HOST"
+      port: "DB_PORT"
+      database: "DB_NAME"
+      username: "DB_USERNAME"
+      password: "DB_PASSWORD"
