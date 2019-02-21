@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 
-	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
 	"github.com/vic3r/smart-cities-back/services/db/redis"
 )
@@ -53,15 +51,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// create a new gin controller and handle it
-	router := gin.Default()
-	mibiciDomain.Controller(router)
-
-	// read host and port from config
-	host := viper.Get("api.host").(string)
-	port := viper.Get("api.port").(int)
-
-	// create address and run the server
-	address := fmt.Sprintf("%s:%d", host, port)
-	router.Run(address)
+	runServer(mibiciDomain)
 }
