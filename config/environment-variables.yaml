@@ -1,0 +1,8 @@
+service:
+  domain:
+    implementation: "DB_IMPLEMENTATION"
+    host: "DB_HOST"
+    port: "DB_PORT"
+    database: "DB_NAME"
+    username: "DB_USERNAME"
+    password: "DB_PASSWORD"
