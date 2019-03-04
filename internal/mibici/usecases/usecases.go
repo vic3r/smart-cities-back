@@ -48,3 +48,18 @@ func (u *defaultUseCases) GetNeighborhoods() ([]*models.Neighborhood, error) {
 
 	return neighborhood, nil
 }
+
+//GetZones returns a list of zones within a city
+func (u *defaultUseCases) GetNeighborhoodsByZone(zoneID string) ([]*models.Zone, error) {
+	zneID, err := strconv.Atoi(zoneID)
+	if err != nil {
+		return nil, errors.New("not possible to parse zone_id")
+	}
+	zone, err := u.storage.GetNeighborhoodByID(zneID)
+	if err != nil {
+		return nil, err
+	}
+
+	return zone, nil
+
+}

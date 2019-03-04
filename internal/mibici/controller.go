@@ -55,3 +55,24 @@ func (c *Controller) GetNeighborhood(ctx *gin.Context) {
 
 	return
 }
+
+//GetNeighborhoodByZone returns a json with a particular zone
+func (c *Controller) GetNeighborhoodByZone(ctx *gin.Context) {
+	zoneID := ctx.Param("zone_id")
+
+	if zoneID == "" {
+		ctx.JSON(http.StatusInternalServerError, gin.H{"error": "nil zone_id"})
+		ctx.Abort()
+
+		return
+	}
+	// TODO: handle errors properly
+	zone, err := c.usecases.GetNeighborhoodByZone(zoneID)
+	if err != nil {
+		ctx.JSON(http.StatusNotFound, gin.H{"no zone found": err})
+	}
+
+	ctx.JSON(http.StatusOK, gin.H{"zone": zone})
+
+	return
+}

@@ -64,3 +64,45 @@ func (r *redisClient) GetListNeighborhoods() ([]*models.Neighborhood, error) {
 
 	return nieghborhoodsResponse, nil
 }
+
+func (r *redisClient) GetListZones() ([]*models.Zone, error) {
+	// Query to retrieve a list of zone
+	response := redis.NewStringCmd(r.client.Do("GET", "zone"))
+
+	// parse response to byte array[]
+	byteResponse, err := response.Bytes()
+	if err != nil {
+		return nil, fmt.Errorf("not possible to parse response: %v", err)
+	}
+
+	zonesResponse := []*models.Zone{}
+	// parse byte array response to json
+	err = json.Unmarshal(byteResponse, zonesResponse)
+	if err != nil {
+		return nil, fmt.Errorf("not possible to unmarshal response: %v", err)
+	}
+
+	return zonesResponse, nil
+}
+
+// GetZoneByID returns a zone
+func (r *redisClient) GetZoneByID(zoneID int) (*models.Zone, error) {
+	// Query to retrieve a zone
+	zoneQuery := fmt.Sprintf("zone:%d", zoneID)
+	response := redis.NewStringCmd(r.client.Do("GET", zoneQuery))
+
+	// parse response to byte array[]
+	byteResponse, err := response.Bytes()
+	if err != nil {
+		return nil, fmt.Errorf("not possible to parse response: %v", err)
+	}
+
+	zoneResponse := &models.Zone{}
+	// parse byte array response to json
+	err = json.Unmarshal(byteResponse, zoneResponse)
+	if err != nil {
+		return nil, fmt.Errorf("not possible to unmarshal response: %v", err)
+	}
+
+	return zoneResponse, nil
+}
