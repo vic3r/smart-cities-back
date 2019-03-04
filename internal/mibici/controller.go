@@ -32,7 +32,6 @@ func (c *Controller) GetNeighborhoods(ctx *gin.Context) {
 
 	ctx.JSON(http.StatusOK, gin.H{"neighborhoods": neighborhoods})
 
-	return
 }
 
 // GetNeighborhood returns a json with a particular neighborhood
@@ -43,7 +42,6 @@ func (c *Controller) GetNeighborhood(ctx *gin.Context) {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"error": "nil neighborhood_id"})
 		ctx.Abort()
 
-		return
 	}
 	// TODO: handle errors properly
 	neighborhood, err := c.usecases.GetNeighborhood(neighborhoodID)
@@ -53,5 +51,4 @@ func (c *Controller) GetNeighborhood(ctx *gin.Context) {
 
 	ctx.JSON(http.StatusOK, gin.H{"neighborhood": neighborhood})
 
-	return
 }

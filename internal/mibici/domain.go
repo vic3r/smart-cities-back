@@ -23,5 +23,4 @@ func NewDomain(usecases UseCases) (*Domain, error) {
 func (d *Domain) Controller(router *gin.Engine) {
 	router.GET("mibici/neighborhoods", d.controller.GetNeighborhoods)
 	router.GET("mibici/neighborhood/:id", d.controller.GetNeighborhood)
-
 }

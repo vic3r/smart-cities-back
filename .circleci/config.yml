@@ -1,0 +1,11 @@
+version: 2
+
+commands:
+  sayhello:
+    description: "TODO"
+    parameters:
+      to:
+        type: string
+        default: "To cofigure CI/CD"
+    steps:
+      - run: echo << parameters.to >

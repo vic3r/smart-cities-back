@@ -2,6 +2,7 @@ package usecases
 
 import (
 	"errors"
+	"fmt"
 	"strconv"
 
 	"github.com/vic3r/smart-cities-back/internal/mibici"
@@ -33,7 +34,7 @@ func (u *defaultUseCases) GetNeighborhood(neighborhoodID string) (*models.Neighb
 	}
 	neighborhood, err := u.storage.GetNeighborhoodByID(nbhoodID)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("unexpected error %v", err)
 	}
 
 	return neighborhood, nil
@@ -43,7 +44,7 @@ func (u *defaultUseCases) GetNeighborhood(neighborhoodID string) (*models.Neighb
 func (u *defaultUseCases) GetNeighborhoods() ([]*models.Neighborhood, error) {
 	neighborhood, err := u.storage.GetListNeighborhoods()
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("unexpected error %v", err)
 	}
 
 	return neighborhood, nil

@@ -1,8 +1,6 @@
 package fake
 
 import (
-	"time"
-
 	"github.com/vic3r/smart-cities-back/internal/mibici/usecases/storage"
 	"github.com/vic3r/smart-cities-back/internal/models"
 )
@@ -31,19 +29,16 @@ func (f *fake) GetNeighborhoodByID(int) (*models.Neighborhood, error) {
 				ID:             1,
 				NeighborhoodID: 11,
 				BikesQuantity:  8,
-				Date:           time.Now(),
 			},
 			&models.Station{
 				ID:             2,
 				NeighborhoodID: 11,
 				BikesQuantity:  6,
-				Date:           time.Now(),
 			},
 			&models.Station{
 				ID:             3,
 				NeighborhoodID: 11,
 				BikesQuantity:  10,
-				Date:           time.Now(),
 			},
 		},
 	}, nil
@@ -63,19 +58,16 @@ func (f *fake) GetListNeighborhoods() ([]*models.Neighborhood, error) {
 					ID:             1,
 					NeighborhoodID: 11,
 					BikesQuantity:  8,
-					Date:           time.Now(),
 				},
 				&models.Station{
 					ID:             2,
 					NeighborhoodID: 11,
 					BikesQuantity:  6,
-					Date:           time.Now(),
 				},
 				&models.Station{
 					ID:             3,
 					NeighborhoodID: 11,
 					BikesQuantity:  10,
-					Date:           time.Now(),
 				},
 			},
 		},
@@ -90,19 +82,16 @@ func (f *fake) GetListNeighborhoods() ([]*models.Neighborhood, error) {
 					ID:             21,
 					NeighborhoodID: 12,
 					BikesQuantity:  9,
-					Date:           time.Now(),
 				},
 				&models.Station{
 					ID:             22,
 					NeighborhoodID: 12,
 					BikesQuantity:  6,
-					Date:           time.Now(),
 				},
 				&models.Station{
 					ID:             23,
 					NeighborhoodID: 12,
 					BikesQuantity:  8,
-					Date:           time.Now(),
 				},
 			},
 		},

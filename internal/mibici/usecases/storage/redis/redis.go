@@ -54,7 +54,7 @@ func (r *redisClient) GetListNeighborhoods() ([]*models.Neighborhood, error) {
 	if err != nil {
 		return nil, fmt.Errorf("not possible to parse response: %v", err)
 	}
-
+	// TODO: Fix the iteration response
 	nieghborhoodsResponse := []*models.Neighborhood{}
 	// parse byte array response to json
 	err = json.Unmarshal(byteResponse, nieghborhoodsResponse)
