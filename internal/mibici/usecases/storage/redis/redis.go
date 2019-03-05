@@ -1,9 +1,6 @@
 package redis
 
 import (
-	"encoding/json"
-	"fmt"
-
 	"github.com/go-redis/redis"
 	"github.com/vic3r/smart-cities-back/internal/mibici/usecases/storage"
 	"github.com/vic3r/smart-cities-back/internal/models"
@@ -23,44 +20,25 @@ func New(client *redis.Client) (storage.Storage, error) {
 }
 
 // GetNeighborhoodByID returns a neighborhood
-func (r *redisClient) GetNeighborhoodByID(neighborhoodID int) (*models.Neighborhood, error) {
-	// Query to retrieve a neighborhood
-	neighborhoodQuery := fmt.Sprintf("neighborhood:%d", neighborhoodID)
-	response := redis.NewStringCmd(r.client.Do("GET", neighborhoodQuery))
+func (c *redisClient) GetNeighborhoodByID(zoneName string, neighborhoodID int64) (*models.Neighborhood, error) {
 
-	// parse response to byte array[]
-	byteResponse, err := response.Bytes()
-	if err != nil {
-		return nil, fmt.Errorf("not possible to parse response: %v", err)
-	}
-
-	nieghborhoodResponse := &models.Neighborhood{}
-	// parse byte array response to json
-	err = json.Unmarshal(byteResponse, nieghborhoodResponse)
-	if err != nil {
-		return nil, fmt.Errorf("not possible to unmarshal response: %v", err)
-	}
-
-	return nieghborhoodResponse, nil
+	return getNeighborhoodByID(c, zoneName, neighborhoodID)
 }
 
 // GetListNeighborhoods returns a neighborhood list
-func (r *redisClient) GetListNeighborhoods() ([]*models.Neighborhood, error) {
-	// Query to retrieve a list of neighborhoods
-	response := redis.NewStringCmd(r.client.Do("GET", "neighborhood"))
+func (c *redisClient) GetListNeighborhoods() ([]*models.Neighborhood, error) {
 
-	// parse response to byte array[]
-	byteResponse, err := response.Bytes()
-	if err != nil {
-		return nil, fmt.Errorf("not possible to parse response: %v", err)
-	}
-	// TODO: Fix the iteration response
-	nieghborhoodsResponse := []*models.Neighborhood{}
-	// parse byte array response to json
-	err = json.Unmarshal(byteResponse, nieghborhoodsResponse)
-	if err != nil {
-		return nil, fmt.Errorf("not possible to unmarshal response: %v", err)
-	}
+	return getNeighborhoods(c)
+}
 
-	return nieghborhoodsResponse, nil
+// GetNeighborhoodsListByZone returns a list of neighborhoods per zone
+func (c *redisClient) GetNeighborhoodsListByZone(zoneName string) ([]*models.Neighborhood, error) {
+
+	return getNeighborhoodsByZone(c, zoneName)
+}
+
+// GetListZones returns a list of zones
+func (c *redisClient) GetListZones() ([]*models.Zone, error) {
+
+	return getZones(c)
 }

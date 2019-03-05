@@ -39,7 +39,8 @@ func TestNew(t *testing.T) {
 func TestGetNeighborhoodByID(t *testing.T) {
 	tests := []struct {
 		Name                 string
-		ID                   int
+		ZoneName             string
+		ID                   int64
 		ExpectedNeighborhood *models.Neighborhood
 		ExpectedError        error
 	}{
@@ -87,7 +88,7 @@ func TestGetNeighborhoodByID(t *testing.T) {
 				assert.EqualError(t, err, test.ExpectedError.Error())
 			}
 
-			neighborhood, err := storage.GetNeighborhoodByID(test.ID)
+			neighborhood, err := storage.GetNeighborhoodByID(test.Name, test.ID)
 			if err == nil {
 				assert.NoError(t, err)
 				assert.Equal(t, test.ExpectedNeighborhood, neighborhood)

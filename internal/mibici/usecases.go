@@ -6,6 +6,8 @@ import (
 
 // UseCases is an interface for the usecases
 type UseCases interface {
-	GetNeighborhood(neighborhoodID string) (*models.Neighborhood, error)
+	GetNeighborhood(zoneName, neighborhoodID string) (*models.Neighborhood, error)
 	GetNeighborhoods() ([]*models.Neighborhood, error)
+	GetNeighborhoodsByZone(zone string) ([]*models.Neighborhood, error)
+	GetZones() ([]*models.Zone, error)
 }

@@ -47,6 +47,7 @@ func TestNew(t *testing.T) {
 func TestGetNeighborhood(t *testing.T) {
 	tests := []struct {
 		Name                 string
+		ZoneName             string
 		NeighborhoodID       string
 		Storage              storage.Storage
 		ExpectedNeighborhood *models.Neighborhood
@@ -56,7 +57,7 @@ func TestGetNeighborhood(t *testing.T) {
 			Name:           "HappyPath",
 			NeighborhoodID: "11",
 			Storage: &mockStorage{
-				GetNeighborhoodByIDFunc: func(int) (*models.Neighborhood, error) {
+				GetNeighborhoodByIDFunc: func(string, int64) (*models.Neighborhood, error) {
 					return &models.Neighborhood{
 						ID:           11,
 						Name:         "Puerta de Hierro",
@@ -93,7 +94,7 @@ func TestGetNeighborhood(t *testing.T) {
 			Name:           "InvalidNeighborhoodID",
 			NeighborhoodID: "a",
 			Storage: &mockStorage{
-				GetNeighborhoodByIDFunc: func(int) (*models.Neighborhood, error) {
+				GetNeighborhoodByIDFunc: func(string, int64) (*models.Neighborhood, error) {
 					return nil, errors.New("not possible to parse neighborhood_id")
 				},
 			},
@@ -104,7 +105,7 @@ func TestGetNeighborhood(t *testing.T) {
 			Name:           "UnexpectedError",
 			NeighborhoodID: "11",
 			Storage: &mockStorage{
-				GetNeighborhoodByIDFunc: func(int) (*models.Neighborhood, error) {
+				GetNeighborhoodByIDFunc: func(string, int64) (*models.Neighborhood, error) {
 					return nil, errors.New("server error")
 				},
 			},
@@ -126,7 +127,7 @@ func TestGetNeighborhood(t *testing.T) {
 				assert.EqualError(t, err, test.ExpectedError.Error())
 			}
 
-			neighborhood, err := useCases.GetNeighborhood(test.NeighborhoodID)
+			neighborhood, err := useCases.GetNeighborhood(test.ZoneName, test.NeighborhoodID)
 			if err == nil {
 				assert.Equal(t, test.ExpectedNeighborhood, neighborhood)
 			} else {

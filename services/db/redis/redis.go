@@ -42,7 +42,7 @@ func (s *service) Connection(rawConfig map[string]interface{}) (*redis.Client, e
 	if config.Password == "" {
 		return nil, errors.New("nil password")
 	}
-	if config.Database <= 0 {
+	if config.Database < 0 {
 		return nil, errors.New("nil database")
 	}
 

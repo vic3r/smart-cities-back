@@ -11,6 +11,7 @@ import (
 func runServer(mibiciDomain *mibici.Domain) {
 	// create a new gin controller and handle it
 	router := gin.Default()
+	router.Use(gin.Recovery())
 	mibiciDomain.Controller(router)
 
 	// read host and port from config

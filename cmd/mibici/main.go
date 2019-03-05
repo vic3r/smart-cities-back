@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"log"
 	"os"
 
@@ -8,24 +9,28 @@ import (
 	"github.com/vic3r/smart-cities-back/services/db/redis"
 )
 
-const (
-	// ConfigPath describes the configuration file path to look for configuration files
-	ConfigPath = "$HOME/go/src/github.com/vic3r/smart-cities-back/config"
-	// ConfigType describes the configuration type to read
-	ConfigType = "yaml"
-)
-
 var configurations = map[string]string{
 	"DEBUG":      "debug",
 	"DEV":        "development",
 	"PRODUCTION": "production",
+	"LOCAL":      "local",
+}
+
+var (
+	configPath,
+	configType string
+)
+
+func init() {
+	// configPath describes the configuration path to find
+	flag.StringVar(&configPath, "ConfigDir", "", "directory for the configuration files")
+	// ConfigType describes the configuration type to read
+	flag.StringVar(&configType, "ConfigType", "", "configuration type to look for")
 }
 
 func main() {
 	// Get the config environment
 	configEnv := os.Getenv("ENVIRONMENT")
-	viper.AddConfigPath(ConfigPath)
-	viper.SetConfigType(ConfigType)
 
 	// check if the current config env exists
 	configName, ok := configurations[configEnv]
@@ -33,7 +38,11 @@ func main() {
 		log.Fatal("invalid config environment")
 	}
 
-	viper.SetConfigFile(configName)
+	flag.Parse()
+
+	viper.SetConfigType(configType)
+	viper.AddConfigPath(configPath)
+	viper.SetConfigName(configName)
 	err := viper.ReadInConfig()
 	if err != nil {
 		log.Fatalf("error reading config file: %s \n", err)
