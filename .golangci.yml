@@ -1,0 +1,9 @@
+run:
+  deadline: 3m
+  skip-dirs:
+    - vendor
+
+linters:
+  disable:
+    - typecheck
+    - errcheck
