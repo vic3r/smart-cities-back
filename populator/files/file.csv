@@ -1,0 +1,274 @@
+zone,station_id,name,latitude,longitude,address,neighborhood,postal_code,capacity,bikes_available,bikes_unavailable,docks_available,docks_unavailable
+Guadalajara,2,(GDL-001) C. Epigmenio Glez./ Av. 16 de Sept.,20.666378,-103.34882,(GDL-001) C. Epigmenio González / Av. 16 de Septiembre *,Mexicaltzingo,44180,15,3,0,12,0
+Guadalajara,3,(GDL-002) C. Colonias  / Av.  Niños héroes,20.667228,-103.366,(GDL-002) C. Colonias / Av.  Niños Héroes,Americana,44160,15,4,1,10,0
+Guadalajara,4,(GDL-003) C. Vidrio / Av. Chapultepec,20.66769,-103.368252,(GDL-003) C. Vidrio / Av. Chapultepec,Americana,44160,19,0,1,18,0
+Guadalajara,5,(GDL-004) C. Ghilardi /C. Miraflores,20.69175,-103.36255,(GDL-004) C. Ghilardi / C. Miraflores *,Santa Teresita,44600,11,8,1,2,0
+Guadalajara,6,(GDL-005) C. San Diego /Calzada Independencia,20.681151,-103.338863,(GDL-005) C. San Diego / Calz. Independencia *,El Retiro,44280,11,11,0,0,0
+Guadalajara,8,(GDL-006) C. Venustiano Carranza /C. Reforma,20.6807519,-103.3443801,(GDL-006) C. Venustiano Carranza / C. Reforma *,El Retiro,44280,11,11,0,0,0
+Guadalajara,9,(GDL-007)C. Epigmenio Glez./Av. Cristobal C.,20.666771,-103.350562,(GDL-007) C. Epigmenio González / Av. Cristóbal Colón,Mexicaltzingo,44180,15,14,1,0,0
+Guadalajara,10,(GDL-008) C. J. Angulo / C. González Ortega,20.681871,-103.350396,(GDL-008) C. Joaquín Angulo / C. González Ortega *,Guadalajara Centro,44100,15,13,0,2,0
+Guadalajara,11,(GDL-009) Calz. Federalismo/ C. J. Angulo,20.681984,-103.353835,(GDL-009) Calz. Federalismo / C. Joaquín Angulo *,Artesanos,44200,23,12,1,10,0
+Guadalajara,12,(GDL-010) C. Cruz verde / C. Joaquin Angulo,20.681786,-103.357267,(GDL-010) C. Cruz Verde / C. Joaquín Angulo *,El Santuario,44200,15,7,0,8,0
+Guadalajara,13,(GDL-011) C. Garibaldi / C. Frías,20.681081,-103.360099,(GDL-011) C. Garibaldi / C. Frías *,Sagrada Familia,44200,11,3,0,8,1
+Guadalajara,14,(GDL-012) C. Joaquín Angulo / C. Ghilardi,20.681989,-103.36292,(GDL-012) C. Joaquín Angulo / C. Ghilardi*,Capilla de Jesús,44200,11,4,0,7,0
+Guadalajara,15,(GDL-013) C. Vidrio  / C. Marsella,20.667623,-103.370499,(GDL-013) C. Vidrio  / C. Marsella,Obrera Centro,44140,11,0,1,10,0
+Guadalajara,16,(GDL-014)C. J. Angulo/C. José Clemente Orozco,20.682059,-103.365969,(GDL-014) C. Joaquín Angulo / C. J. Clemente Orozco *,Villaseñor,44600,19,8,3,8,0
+Guadalajara,17,(GDL-015) C. Herrera y Cairo /C. Pedro Buzeta,20.683191,-103.369349,(GDL-015) C. Herrera y Cairo / C. Pedro Buzeta *,Santa Teresita,44600,15,7,1,7,0
+Guadalajara,18,(GDL-016)C. Bernardo de Balbuena/C. J. Angulo,20.682007,-103.372642,(GDL-016) C. Bernardo de Balbuena / C. Joaquín Angulo*,Santa Teresita,44600,15,9,0,6,0
+Guadalajara,19,(GDL-017) Av. México /C. Bernardo de Balbuena,20.679086,-103.372841,(GDL-017) Av. México / C. Bernardo de Balbuena,Villaseñor,44600,15,0,0,15,0
+Guadalajara,20,(GDL-018) Av. México / C. Manuel M. Diéguez,20.679296,-103.370658,(GDL-018) Av. México / C. Manuel M. Diéguez,Villaseñor,44600,11,0,0,11,0
+Guadalajara,21,(GDL-019)  C. Juan Manuel / C. Andrés Terán,20.678835,-103.368045,(GDL-019) C. Juan Manuel / C. Andrés Terán,Ladrón de Guevara,44600,23,0,1,22,0
+Guadalajara,23,(GDL-021) C. Nicolás Romero / C. Reforma,20.67966,-103.362224,(GDL-021) C. Nicolás Romero / C. Reforma*,Guadalajara Centro,44100,15,4,0,11,0
+Guadalajara,24,(GDL-022)C. San Felipe /C. Enrique D. de León,20.679389,-103.35913,(GDL-022) C. San Felipe / Av. Enrique Díaz de León *,Guadalajara Centro,44100,15,6,2,7,0
+Guadalajara,25,(GDL-023) C. Jesús / C. San Felipe,20.679309,-103.356281,(GDL-023) C. Jesús / C. San Felipe *,Guadalajara Centro,44100,15,11,0,4,0
+Guadalajara,26,(GDL-024) Av.  Federalismo / C. Juan Manuel,20.678777,-103.354035,(GDL-024) Calz. Federalismo / C. Juan Manuel*,Guadalajara Centro,44100,15,10,4,1,0
+Guadalajara,27,(GDL-025) C. Reforma / C. González Ortega,20.680227,-103.350146,(GDL-025) C. Reforma / C. González Ortega *,Guadalajara Centro,44100,15,8,0,7,0
+Guadalajara,28,(GDL-026) C. Pedro Loza / C. Reforma,20.680478,-103.348377,(GDL-026) C. Pedro Loza / C. Reforma,Guadalajara Centro,44100,15,1,3,11,0
+Guadalajara,29,(GDL-027) C. Belén / C. San Felipe,20.679861,-103.345198,(GDL-027) C. Belén / C. San Felipe *,Guadalajara Centro,44100,11,4,1,6,0
+Guadalajara,30,(GDL-028) C. Gregorio Dávila /C. Manuel Acuña,20.684187,-103.36113,(GDL-028) C. Gregorio Dávila / C. Manuel Acuña *,Artesanos,44200,11,8,0,3,0
+Guadalajara,31,(GDL-029)Calz. Indep. /C. Juan Manuel,20.679505,-103.339753,(GDL-029) Calz. Independencia / C. Juan Manuel,Guadalajara Centro,44100,15,13,2,0,0
+Guadalajara,32,(GDL-030) C. Pedro Moreno/ C. Progreso,20.675461,-103.367501,(GDL-030) C. Pedro Moreno / C. Progreso,Americana,44160,19,0,1,18,0
+Guadalajara,33,(GDL-031) C. Hospital / C. Andrés Terán,20.685652,-103.368215,(GDL-031) C. Hospital / C. Andrés Terán *,Ladrón de Guevara,44600,11,6,0,5,0
+Guadalajara,34,(GDL-032) C. Degollado / Av. Hidalgo,20.6772627,-103.344908,(GDL-032) C. Degollado / Av. Hidalgo,Guadalajara Centro,44100,15,8,0,7,0
+Guadalajara,35,(GDL-033) Av. Hidalgo / C. Pedro Loza,20.677419,-103.347983,(GDL-033) Av. Hidalgo / C. Pedro Loza,Guadalajara Centro,44100,15,9,0,6,0
+Guadalajara,36,(GDL-034) C. Morelos / C. Donato Guerra,20.676461,-103.350244,(GDL-034) C. Morelos / C. Donato Guerra,Guadalajara Centro,44100,15,6,0,9,0
+Guadalajara,37,(GDL-035)C. Mezquitán / Av. Hidalgo,20.677315,-103.3534145,(GDL-035) C. Mezquitán / Av. Hidalgo,Guadalajara Centro,44100,11,3,0,8,0
+Guadalajara,38,(GDL-036) C. Marcos Castellanos/ C. Morelos,20.676078,-103.356458,(GDL-036) C. Marcos Castellanos / C. Morelos,Americana,44160,23,17,0,6,0
+Guadalajara,39,(GDL-037) C.Juan N. Cumplido /C. Independenci,20.678034,-103.358466,(GDL-037) C. Juan N. Cumplido / C. Independencia,Guadalajara Centro,44100,15,7,3,5,0
+Guadalajara,40,(GDL-038) C. Nicolás Romero / Av. Hidalgo,20.676656,-103.362331,(GDL-038) C. Nicolás Romero / Av. Hidalgo,Guadalajara Centro,44100,15,6,1,8,0
+Guadalajara,41,(GDL-039) C. General Coronado / Av. Hidalgo,20.677108,-103.365088,(GDL-039) C. General Coronado / Av. Hidalgo,Guadalajara Centro,44100,15,2,0,13,0
+Guadalajara,42,(GDL-040) C. Morelos / C. Progreso,20.676067,-103.367049,(GDL-040) C. Morelos / C. Progreso,Ladrón de Guevara,44600,19,0,1,18,0
+Guadalajara,43,(GDL-041) C. Manuel M. Diéguez / Av. Hidalgo,20.67671,-103.37066,(GDL-041) C. Manuel M. Diéguez / Av. Hidalgo,Santa Teresita,44600,15,0,1,14,0
+Guadalajara,44,(GDL-042) C. Bernardo de Balbuena /Av Hidalgo,20.676628,-103.372687,(GDL-042) C. Bernardo de Balbuena / Av. Hidalgo *,Santa Teresita,44600,15,2,0,13,0
+Guadalajara,45,(GDL-043) C. Simón Bolivar / C. López Cotilla,20.673756,-103.372613,(GDL-043) C. Simón Bolivar / C. López Cotilla,Americana,44160,11,0,0,11,0
+Guadalajara,46,(GDL-044)C. Gral. San Martín /Av.  Vallarta,20.674636,-103.371639,(GDL-044) C. Gral. San Martin /Av. Vallarta,Americana,44160,19,0,0,19,0
+Guadalajara,47,(GDL-045) C. Pedro Moreno / C. Marsella,20.675444,-103.370147,(GDL-045) C. Pedro Moreno / C. Marsella,Americana,44160,19,2,1,16,0
+Guadalajara,48,(GDL-046) C. Emerson / Av. Vallarta,20.675014,-103.365025,(GDL-046) C. Emerson / Av. Vallarta,Americana,44160,11,0,1,10,0
+Guadalajara,49,(GDL-047) C. Robles Gil / Av. Vallarta,20.674931,-103.362351,(GDL-047) C. Robles Gil / Av. Vallarta,Americana,44160,15,7,1,7,0
+Guadalajara,50,(GDL-048) C. Constancio Hernández/ Av. Juaréz,20.674721,-103.358548,(GDL-048) C. Constancio Hernández A. / Av. Juárez,Americana,44160,23,5,2,16,1
+Guadalajara,51,(GDL-049) Lopez Cotilla/ Marcos Castellanos,20.6740865,-103.3563196,(GDL-049) C. López Cotilla/ C. Marcos Castellanos,Guadalajara Centro,44100,33,29,0,4,1
+Guadalajara,52,(GDL-050) C. Pedro Moreno / Calz. Federalismo,20.675746,-103.354579,(GDL-050) C. Pedro Moreno / Calz. Federalismo,Guadalajara Centro,44100,23,8,4,11,0
+Guadalajara,53,(GDL-051) C. 8 de Julio / Av. Juárez,20.674559,-103.352663,(GDL-051) C. 8 de Julio / Av. Juárez,Guadalajara Centro,44100,15,4,0,11,0
+Guadalajara,54,(GDL-052) Av. Juárez / Av. 16 de Septiembre,20.675244,-103.347889,(GDL-052) Av. Juárez / Av. 16 de Septiembre,Guadalajara Centro,44100,23,9,1,13,0
+Guadalajara,55,(GDL-053) C. Maestranza / Av. Juárez,20.675401,-103.345665,(GDL-053) C. Maestranza / Av. Juárez,Guadalajara Centro,44100,15,10,0,5,0
+Guadalajara,56,(GDL-054) Av. Juárez / Calz. Independencia,20.675421,-103.342049,(GDL-054) Av. Juárez / Calz. Independencia,Guadalajara Centro,44100,27,27,0,0,0
+Guadalajara,57,(GDL-055) C. Degollado /C.Prisciliano Sánchez,20.672696,-103.345366,(GDL-055) C. Degollado / C.Prisciliano Sánchez,Guadalajara Centro,44100,15,8,0,7,0
+Guadalajara,58,(GDL-056) Av. 16 de Sept. / C. Miguel Blanco,20.671971,-103.347422,(GDL-056) Av. 16 de Septiembre / C. Miguel Blanco,Guadalajara Centro,44100,19,14,0,5,0
+Guadalajara,59,(GDL-057) C. Ocampo / C. Prisciliano Sánchez,20.672516,-103.349573,(GDL-057) C. Ocampo / C. Prisciliano Sánchez,Guadalajara Centro,44100,11,10,0,1,0
+Guadalajara,60,(GDL-058) C. Pavo / C. Prisciliano Sánchez,20.672641,-103.353542,(GDL-058) C. Pavo / C. Prisciliano Sánchez *,Guadalajara Centro,44100,11,5,0,6,0
+Guadalajara,61,(GDL-059) C. Miguel Blanco / C. Penitenciaria,20.672231,-103.355508,(GDL-059) C. Miguel Blanco / C. Penitenciaria,Americana,44160,15,9,0,6,0
+Guadalajara,62,(GDL-060) C. Madero/ C. Camarena,20.6734,-103.357684,(GDL-060) C. Madero/ C. Camarena,Americana,44160,23,7,1,15,0
+Guadalajara,63,(GDL-061) C. Libertad /  C. Argentina,20.671778,-103.361274,(GDL-061) C. Libertad /  C. Argentina,Americana,44160,19,7,3,9,0
+Guadalajara,64,(GDL-062) C. Libertad / C. Moscú,20.673072,-103.365055,(GDL-062) C. Libertad / C. Moscú,Americana,44160,15,2,0,13,0
+Guadalajara,65,(GDL-063) C. Colonias  / C. López Cotilla,20.674132,-103.366139,(GDL-063) C. Colonias  / C. López Cotilla,Americana,44160,27,6,1,20,0
+Guadalajara,66,(GDL-064) C. Marsella / C. López Cotilla,20.673321,-103.370571,(GDL-064) C. Marsella / C. López Cotilla,Americana,44160,19,0,0,19,0
+Guadalajara,67,(GDL-065) C. Simón Bolivar / Av. La Paz,20.6722064,-103.372588,(GDL-065) C. Simón Bolivar / Av. La Paz,Americana,44160,19,2,0,17,0
+Guadalajara,68,(GDL-066) C Lerdo de Tejada/C Gral. Sn Martín,20.671364,-103.371786,(GDL-066) C. Lerdo de Tejada / C. Gral. San Martin,Americana,44160,15,3,0,12,0
+Guadalajara,69,(GDL-067) Calzada Federalismo / C. Vidrio,20.6668825,-103.3555917,(GDL-067) Calz. Federalismo / C. Vidrio *,Americana,44160,19,18,1,0,0
+Guadalajara,70,(GDL-068) C. Guadalupe Zuno / Av. Chapultepec,20.670512,-103.368306,(GDL-068) C. Guadalupe Zuno / Av. Chapultepec,Americana,44160,19,1,0,18,0
+Guadalajara,71,(GDL-069) C. Colonias / C. Guadalupe Zuno,20.670468,-103.366071,(GDL-069) C. Colonias / C. Guadalupe Zuno,Americana,44160,15,7,0,8,0
+Guadalajara,72,(GDL-070) Av. La  Paz / C. Juan de Ojeda,20.671455,-103.363633,(GDL-070) Av. La  Paz / C. Juan de Ojeda,Americana,44160,11,5,0,6,0
+Guadalajara,73,(GDL-071) Av. La Paz /Av.Enrique Díaz de León,20.670362,-103.359537,(GDL-071) Av. La Paz / Av. Enrique Díaz de León,Americana,44160,15,2,1,12,0
+Guadalajara,74,(GDL-072) Av. La Paz / C. Camarena,20.67056,-103.357589,(GDL-072) Av. La Paz / C. Camarena *,Americana,44160,15,11,2,2,0
+Guadalajara,75,(GDL-073) Av. La Paz / Av. Federalismo,20.669955,-103.355032,(GDL-073) Av. La Paz / Calz. Federalismo,Americana,44160,19,13,1,5,0
+Guadalajara,76,(GDL-074) C. Enrique González / C. Libertad,20.67131,-103.351651,(GDL-074) C. E. González Martínez / C. Libertad *,Guadalajara Centro,44100,11,9,1,1,0
+Guadalajara,77,(GDL-075) C. Pedro Rioseco /C. Nueva Galicia,20.669628,-103.348768,(GDL-075) C. Pedro Rioseco / C. Nueva Galicia,Guadalajara Centro,44100,11,5,0,6,0
+Guadalajara,78,(GDL-076) C. Ramón Corona / C. Libertad,20.670243,-103.346195,(GDL-076) C. Ramón Corona / C. Libertad,Guadalajara Centro,44100,15,10,0,5,0
+Guadalajara,79,(GDL-077) C. Argentina / C. Pedro Moreno,20.675631,-103.36134,(GDL-077) C. Argentina / C. Pedro Moreno,Americana,44160,15,6,1,8,0
+Guadalajara,80,(GDL-078) C. Comercio / C. La Paz,20.667946,-103.346775,(GDL-078) C. Comercio / Av. La Paz,Guadalajara Centro,44100,15,3,0,12,0
+Guadalajara,81,(GDL-079)  C. Donato Guerra /Av. La Paz,20.6688627,-103.35130221,(GDL-079) C. Donato Guerra /Av. La Paz *,Mexicaltzingo,44180,11,8,0,3,0
+Guadalajara,82,(GDL-080) C. Manuel Acuña / Av. Américas,20.68432,-103.373252,(GDL-080) C. Manuel Acuña / Av. Américas *,Villaseñor,44600,19,5,0,14,0
+Guadalajara,83,(GDL-081) C. Venezuela / Av. Niños Héroes,20.667352,-103.363338,(GDL-081) C. Venezuela / Av. Niños Héroes,Americana,44160,11,1,0,10,0
+Guadalajara,84,(GDL-082)C. Gdpe. Montenegro/C.Nuño de Guzman,20.669326,-103.362535,(GDL-082) C. Gdpe. Montenegro/ C. Nuño de Guzman *,Americana,44160,15,3,0,12,0
+Guadalajara,85,(GDL-083) C. Vidrio / Av. Enrique Díaz,20.667532,-103.3595222,(GDL-083) C. Vidrio / Av. Enrique Díaz de León *,Americana,44160,19,11,0,8,0
+Guadalajara,86,(GDL-084) C. Montenegro / Av. Chapultepec,20.669306,-103.368312,(GDL-084) C. Montenegro / Av. Chapultepec,Americana,44160,23,0,3,20,0
+Guadalajara,87,(GDL-085)C. Gdpe. Zuno/ Av.  Unión,20.670426,-103.373378,(GDL-085) C. Gdpe. Zuno/ Av.  Unión,Obrera Centro,44140,15,5,0,10,0
+Guadalajara,88,(GDL-086) C. Simón Bolivar / Av. Niños Héroes,20.66704,-103.372444,(GDL-086) C. Simón Bolivar / Av. Niños Héroes*,Obrera Centro,44140,15,8,0,7,0
+Guadalajara,154,(GDL-087) Av. Américas / Av. López Mateos,20.69493,-103.37333,(GDL-087) Av. Américas / Av. López Mateos,Italia Providencia,44648,15,0,0,15,0
+Guadalajara,155,(GDL-088) Av.Plan de San Luis/C. Andrés Teran,20.6972,-103.36773,(GDL-088) Av. Plan de San Luis / C. Andrés Terán *,Lomas Del Country,44610,15,6,0,9,0
+Guadalajara,156,(GDL-089) C. Juan Álvarez / C. Cruz Verde,20.68456,-103.35699,(GDL-089) C. Juan Álvarez / C. Cruz Verde,Capilla de Jesús,44200,15,6,2,7,0
+Guadalajara,157,(GDL-090) Calz. Federalismo / C. Durango,20.69865,-103.35519,(GDL-090) Calz. Federalismo / C. Durango*,Niños Héroes,44260,19,13,1,5,0
+Guadalajara,158,(GDL-091) C. Magisterio /Av. M. Ávila Camacho,20.696097,-103.349382,(GDL-091) C. Magisterio / Av. M. Ávila Camacho *,Observatorio,44266,19,18,1,0,0
+Guadalajara,159,(GDL-092) Calz Federalismo / Av Plan San Luis,20.69610588,-103.3549492,(GDL-092) Calz. Federalismo / Av. Plan San Luis *,Niños Héroes,44260,15,15,0,0,0
+Guadalajara,160,(GDL-093) C. H Colegio Militar / Av. Américas,20.69311,-103.37298,(GDL-093) C. H. Colegio Militar / Av. Américas,Ayuntamiento,44620,15,0,2,13,0
+Guadalajara,161,(GDL-094) C. Manuel Cambre / C. Andrés Teran,20.69324,-103.36757,(GDL-094) C. Manuel Cambre / C. Andrés Terán *,Santa Teresita,44600,15,7,1,7,0
+Guadalajara,162,(GDL-095)  C. Mariano Bárcena / Maestros,20.692725,-103.3516,(GDL-095) C. Mariano Bárcena / Av. de los Maestros,Artesanos,44200,19,12,1,6,0
+Guadalajara,163,(GDL-096) C. Jesús García / C. González Orte,20.6891,-103.35071,(GDL-096) C. Jesús García / C. González Ortega,Artesanos,44200,19,15,2,2,0
+Guadalajara,164,(GDL-097) C. María Vigil / C. Juan N Cumplido,20.68981,-103.3582,(GDL-097) C. María Vigil / C. Juan N. Cumplido *,San Bernardo,44260,19,7,1,11,0
+Guadalajara,165,(GDL-098) Calz. Federalismo / Av. Maestros,20.693072,-103.354209,(GDL-098) Calz. Federalismo / Av. de los Maestros*,Sagrada Familia,44200,23,12,4,7,0
+Guadalajara,166,(GDL-099) C. Eulogio Parra /C.González Ortega,20.687196,-103.350525,(GDL-099) C. Gral. Eulogio Parra / C. González Ortega *,Guadalajara Centro,44100,11,8,0,3,0
+Guadalajara,167,(GDL-100) C. Ayuntamiento/C. A. R. Plasencia,20.69269,-103.37082,(GDL-100) C. Ayuntamiento / C. Alfredo R. Plasencia *,Chapultepec Country,44620,15,1,0,14,0
+Guadalajara,168,(GDL-101) C. Amado Nervo /C. José María Vigil,20.68969,-103.37486,(GDL-101) C. Amado Nervo / C. José María Vigil,Villaseñor,44600,15,6,1,8,0
+Guadalajara,169,(GDL-102) C. María Vigil/C. Manuel M. Dieguez,20.68985,-103.37071,(GDL-102) C. José María Vigil / C. Manuel M. Dieguez *,Ayuntamiento,44620,11,6,1,4,0
+Guadalajara,170,(GDL-103) J. Clemente Orozco /C. Jesús García,20.68861,-103.365814,(GDL-103) C. J. Clemente Orozco / C. Jesús García *,Villaseñor,44600,15,9,0,6,0
+Guadalajara,171,(GDL-104) C. Pedro Loza / Av. Manuel Acuña,20.68348,-103.34853,(GDL-104) C. Pedro Loza / Av. Manuel Acuña*,Guadalajara Centro,44100,19,13,0,6,0
+Guadalajara,172,(GDL-105) C. Pino Suárez / C. Joaquin Angulo,20.6822,-103.34601,(GDL-105) C. Pino Suárez / C. Joaquín Angulo*,El Retiro,44280,15,13,2,0,0
+Guadalajara,173,(GDL-106) C. Juan Álvarez / C. Belén,20.68465,-103.34526,(GDL-106) C. Juan Álvarez / C. Belén*,El Retiro,44280,23,22,1,0,0
+Guadalajara,174,(GDL-107) Calz. Federalismo/C. J. María Vigil,20.68981,-103.353973,(GDL-107) Calz. Federalismo / C. José María Vigil *,Sagrada Familia,44200,15,6,0,9,0
+Guadalajara,175,(GDL-108) C. Hospital / C. Alameda,20.68586,-103.33964,(GDL-108) C. Hospital / C. Alameda *,El Retiro,44280,11,6,1,4,0
+Guadalajara,176,(GDL-109) C. Eulogio Parra / Av. Américas,20.68725,-103.37363,(GDL-109) C. Eulogio Parra / Av. Américas,El Santuario,44200,19,1,0,18,0
+Guadalajara,177,(GDL-110) C. Manuel Diéguez/Av. Eulogio Parra,20.68723,-103.37084,(GDL-110) C. Manuel Diéguez / C. Gral. Eulogio Parra *,Villaseñor,44600,11,3,2,6,0
+Guadalajara,178,(GDL-111) C. José Palomar / C. Hospital,20.686228,-103.336305,(GDL-111) C. José Palomar / C. Hospital *,El Retiro,44280,15,9,6,0,1
+Guadalajara,179,(GDL-112) C. C. Orozco/C. Gral. Eulogio Parra,20.687,-103.36582,(GDL-112) C. J. Clemente Orozco / C. Gral. Eulogio Parra *,Ladrón de Guevara,44600,11,8,1,2,0
+Guadalajara,180,(GDL-113) C. Ghilardi / C. Arista,20.6880337,-103.362716,(GDL-113) C. Ghilardi / C. Arista *,Ladrón de Guevara,44600,15,9,2,4,0
+Guadalajara,181,(GDL-114) C. Monte Cáucaso / C. Alameda,20.68925,-103.3361,(GDL-114) C. Monte Cáucaso / C. Alameda *,El Retiro,44280,15,13,2,0,0
+Guadalajara,182,(GDL-115) Calz. Federalismo / C. Fco. Zarco,20.68605,-103.35408,(GDL-115) Calz. Federalismo / C. Fco. Zarco,Sagrada Familia,44200,15,6,2,7,0
+Guadalajara,183,(GDL-116) Av Manuel Acuña/C. Pablo Villaseñor,20.68447,-103.37989,(GDL-116) Av. Manuel Acuña / C. Pablo Villaseñor*,Villaseñor,44600,11,3,0,8,0
+Guadalajara,184,(GDL-117) Av Manuel Acuña / C Fray Fco Frejes,20.68427,-103.37653,(GDL-117) Av. Manuel Acuña / C. Fray Fco. Frejes*,Villaseñor,44600,11,1,0,10,0
+Guadalajara,185,(GDL-118) C. Antonio de León / C. Garibaldi,20.68168,-103.38197,(GDL-118) C. Antonio de León / C. Garibaldi*,Villaseñor,44600,15,0,0,15,0
+Guadalajara,186,(GDL-119) C. Fco Rojas González /C. Garibaldi,20.68153,-103.3785,(GDL-119) C. Fco. Rojas González / C. Garibaldi *,Villaseñor,44600,11,1,0,10,0
+Guadalajara,187,(GDL-120) C. Agustín de la Rosa /C. Garibaldi,20.68132,-103.37537,(GDL-120) C. Agustín de la Rosa / C. Garibaldi *,Villaseñor,44600,11,0,0,11,0
+Guadalajara,188,(GDL-121) C. Tomás V. Gómez / Av. México,20.67914,-103.38253,(GDL-121) C. Tomás V. Gómez / Av. México,Arcos Vallarta,44130,19,0,1,18,0
+Guadalajara,189,(GDL-122) C. Fray Luis DePalacio/ Av. México,20.67947,-103.37926,(GDL-122) C. Fray Luis DePalacio/ Av. México*,Santa Teresita,44600,15,0,0,15,0
+Guadalajara,190,(GDL-123) C. Aurelio L. Gallardo / Av. México,20.67945,-103.376,(GDL-123) C. Aurelio L. Gallardo / Av. México,Santa Teresita,44600,11,0,0,11,0
+Guadalajara,191,(GDL-124) C. Severo Díaz / C. Justo Sierra,20.67741,-103.38387,(GDL-124) C. Severo Díaz / C. Justo Sierra,Arcos Vallarta,44130,15,0,0,15,0
+Guadalajara,192,(GDL-125) C. Pablo Villaseñor / Av. Hidalgo,20.67691,-103.37993,(GDL-125) C. Pablo Villaseñor / Av. Hidalgo,Arcos Vallarta,44130,15,0,0,15,0
+Guadalajara,193,(GDL-126) C. Aurelio L. Gallardo / Av Hidalgo,20.67647,-103.37606,(GDL-126) C. Aurelio L. Gallardo / Av. Hidalgo,Santa Teresita,44600,11,0,0,11,0
+Guadalajara,194,(GDL-127) Av. Vallarta / Av. de Los Arcos,20.67438,-103.38488,(GDL-127) Av. Vallarta / Av. de Los Arcos,Vallarta San Jorge,44690,19,0,0,19,0
+Guadalajara,195,(GDL-128) Av. Morelos / C. Emilio Castelar,20.67554,-103.38409,(GDL-128) Av José María Morelos / C. Emilio Castelar,Arcos Vallarta,44130,23,0,0,23,0
+Guadalajara,196,(GDL-129) C. Lope de Vega / Av. Vallarta,20.67455,-103.37998,(GDL-129) C. Lope de Vega / Av. Ignacio L. Vallarta,Arcos Vallarta,44130,23,0,1,22,0
+Guadalajara,197,(GDL-130) C. J. Ruíz de Alarcón / Av Vallarta,20.67448,-103.37618,(GDL-130) C. J. Ruíz de Alarcón / Av. Vallarta,Americana,44160,15,0,0,15,0
+Guadalajara,198,(GDL-131) C. Emilio Castelar / Av. La Paz,20.67206,-103.384,(GDL-131) C. Emilio Castelar / Av. La Paz,Arcos Vallarta,44130,19,0,0,19,0
+Guadalajara,199,(GDL-132) C. Lope de Vega / Av. La Paz,20.67207,-103.37997,(GDL-132) C. Lope de Vega / Av. La Paz,Arcos Vallarta,44130,15,0,0,15,0
+Guadalajara,200,(GDL-133) C. J. Ruíz de Alarcón / Av. La Paz,20.67189,-103.37608,(GDL-133) C. J. Ruíz de Alarcón / Av. La Paz,Americana,44160,15,0,0,15,0
+Guadalajara,201,(GDL-134) C. Agustín Yáñez / C. Fco Ugarte,20.67016,-103.38448,(GDL-134) C. Agustín Yáñez / C. Fco. Ugarte,Vallarta San Jorge,44690,19,0,0,19,0
+Guadalajara,202,(GDL-135) C. Victoriano Agüeros / Av. Unión,20.66868,-103.3731,(GDL-135) C. Victoriano Agüeros / Av. Unión*,Obrera Centro,44140,11,2,0,9,0
+Guadalajara,203,(GDL-136) C. Lope de Vega/C. Efraín Glez Luna,20.66927,-103.37983,(GDL-136) C. Lope de Vega / C. Efraín Glez. Luna *,Arcos Vallarta,44130,19,0,0,19,0
+Guadalajara,204,(GDL-137) C. Ruíz de Alarcón/C. Efraín G Luna,20.66957,-103.37623,(GDL-137) C. Ruíz de Alarcón / C. Efraín Glez. Luna,Lafayette,44150,11,0,0,11,0
+Guadalajara,205,(GDL-138) C. de la Nebulosa / C. Placeres,20.66557,-103.39134,(GDL-138) C. de la Nebulosa / C. Placeres*,Jardines del Bosque Centro,44520,15,0,0,15,0
+Guadalajara,206,(GDL-139) C. Firmamento / Av. Niños Héroes,20.66667,-103.38863,(GDL-139) C. Firmamento / Av. Niños Héroes,Jardines del Bosque Centro,44520,15,1,0,14,0
+Guadalajara,207,(GDL-140) C. Constelación / Av. de los Arcos,20.66816,-103.38488,(GDL-140) C. Constelación / Av. de los Arcos,Jardines del Bosque Centro,44520,15,1,0,14,0
+Guadalajara,208,(GDL-141) C. Ruíz de Alarcón/C. Agustín Yáñez,20.66702,-103.37621,(GDL-141) C. Ruíz de Alarcón / C. Agustín Yáñez,Arcos Vallarta,44130,15,0,0,15,0
+Guadalajara,209,(GDL-142) C. De la Nebulosa / C. Firmamento,20.6647,-103.38855,(GDL-142) C. De la Nebulosa / C. Firmamento,Jardines del Bosque Norte,44520,15,0,0,15,0
+Guadalajara,210,(GDL-143) C. Eclipse / Av. de Los Arcos,20.6625,-103.38407,(GDL-143) C. Eclipse / Av. de Los Arcos,Jardines del Bosque Norte,44520,23,2,2,19,0
+Guadalajara,211,(GDL-144) C. Primo Feliciano / C. San Gabriel,20.669931,-103.394307,(GDL-144) C. Primo Feliciano / C. San Gabriel*,Residencial Chapalita,44500,11,0,1,10,0
+Guadalajara,212,(GDL-145) C. San Miguel / Av. San Francisco,20.66736,-103.3947,(GDL-145) C. San Miguel / Av. San Francisco,Arcos Sur,44500,19,0,0,19,0
+Guadalajara,213,(GDL-146) Av. Guadalupe / C. Boturini,20.6662882,-103.3988986,(GDL-146) Av. Guadalupe / C. Boturini,Campo de Polo Chapalita,44500,11,0,0,11,0
+Guadalajara,214,(GDL-147) Calz. Lázaro Cárdenas/Av. Guadalupe,20.66623,-103.39654,(GDL-147) Calz. Lázaro Cárdenas / Av. Guadalupe*,Jardines de los Arcos,44500,15,0,0,15,0
+Guadalajara,215,(GDL-148) C. San Rafael / Av. Tepeyac,20.66501,-103.39788,(GDL-148) C. San Rafael / Av. Tepeyac *,Chapalita,44500,15,1,1,13,0
+Guadalajara,216,(GDL-149) Calz. Lázaro Cárdenas/López Mateos,20.66511,-103.39388,(GDL-149) Calz. Lázaro Cárdenas/ Av. López Mateos,Vallarta Sur,44500,15,0,0,15,0
+Guadalajara,217,(GDL-150) C. Asunción / Av. Chapalita,20.661387,-103.392533,(GDL-150) C. Asunción / Av. Chapalita*,Chapalita,44500,11,2,0,9,0
+Guadalajara,218,(GDL-151) C. Capuchinas / Av. Chapalita,20.66,-103.39496,(GDL-151) C. Capuchinas / Av. Chapalita*,Chapalita,44500,15,0,0,15,0
+Guadalajara,219,(GDL-152) Parque de las Estrellas/C. Orión,20.65931,-103.38884,(GDL-152) C. Parque de las Estrellas / C. Orión,Jardines del Bosque Norte,44520,19,1,1,17,0
+Guadalajara,220,(GDL-153) C. Crepúsculo / Av. Tonantzin,20.65846,-103.39092,(GDL-153) C. Crepúsculo / Av. Tonantzin,Jardines del Bosque Norte,44520,11,8,0,3,0
+Guadalajara,221,(GDL-154) C. Capuchinas / Av. Las Rosas,20.65761,-103.39363,(GDL-154) C. Capuchinas / Av. Las Rosas,Residencial Del Bosque,44510,15,4,0,11,0
+Guadalajara,222,(GDL-155) Parque de las Estrellas/Mariano Ote,20.65712973,-103.3883797,(GDL-155) Parque de las Estrellas / Av. Mariano Otero *,Jardines de Plaza Del Sol,44520,19,0,0,19,0
+Guadalajara,224,(GDL-157) Av. Mariano Otero / Av. Las Rosas,20.65454,-103.39162,(GDL-157) Av. Mariano Otero / Av. Las Rosas,Jardines de Plaza Del Sol,44510,15,5,0,10,0
+Guadalajara,225,(GDL-158) Av. Faro / Av. Las Rosas,20.65158,-103.38957,(GDL-158) Av. Faro / Av. Las Rosas,Verde Valle,44550,15,8,1,6,0
+Guadalajara,226,(GDL-159) C. Guadalupe Victoria /Del Ejercito,20.66468,-103.33357,(GDL-159) C. Guadalupe Victoria / C. Del Ejército *,Obrera,44420,19,18,1,0,0
+Guadalajara,227,(GDL-160) C.Silverio Garcia/Blvrd. García Ba*,20.66114,-103.3315,(GDL-160) C. Silverio García / Blvr. García Barragán*,Valentín Gómez Farías,44420,11,10,1,0,0
+Guadalajara,228,(GDL-161) C. Rio Usumacinta/Blvrd García Barr,20.65925,-103.33055,(GDL-161) C. Río Usumacinta / Blvr. García Barragán *,González Gallo,44430,19,17,2,0,0
+Guadalajara,229,(GDL-162) C. Rio Tuxpan / C. Salvador Lopez C,20.65721,-103.33046,(GDL-162) C. Río Tuxpan / C. Salvador López Chávez*,González Gallo,44430,19,19,0,0,0
+Guadalajara,230,(GDL-163) C. Corregidora / Blvrd. García B.,20.657817,-103.32898,(GDL-163) C. Corregidora / Blvr. García Barragán *,Obrera,44420,15,15,0,0,0
+Guadalajara,231,(GDL-164) Av. Olímpica /C. José Rolon,20.655,-103.32186,(GDL-164) Calz. Olímpica / C. José Rolón *,Olímpica,44430,15,9,1,5,0
+Guadalajara,232,(GDL-165) C. Rio Panuco/ Blvrd. García B.,20.65251,-103.32553,(GDL-165) C. Río Panuco/  Blvr. García Barragán,Atlas,44870,19,4,1,14,0
+Guadalajara,233,(GDL-166) C. Rio Principal / Blvrd. García B.,20.65475,-103.32719,(GDL-166) C. Río Principal / Blvr. García Barragán *,Olímpica,44430,19,12,1,6,0
+Guadalajara,234,(GDL-167) C. Rio San Juan de Dios/Blvrd. Garc,20.64962,-103.32356,(GDL-167) C. Río San Juan de Dios/ Blvr. García Barragán,Atlas,44870,15,14,1,0,0
+Guadalajara,235,(GDL-168) Av. Rio Nilo / C. Ramón Pacheco,20.64874,-103.31939,(GDL-168) Av. Río Nilo / C. Ramón Pacheco *,Ciudad Universitaria,44840,19,5,0,14,0
+Guadalajara,236,(GDL-169) Blvrd. García Barragán/ C. Rio Zapo,20.64707,-103.32147,(GDL-169) Blvr. García Barragán / C. Río Zapotlanejo *,Atlas,44870,19,19,0,0,0
+Guadalajara,237,(GDL-170)  C. Relojeros/ C. Chamizal,20.64698,-103.30619,(GDL-170) C. Relojeros / C. Chamizal *,Jardines de La Paz,44860,15,8,0,7,0
+Guadalajara,238,(GDL-171) C. Maquinistas / C. San Rafael,20.6461,-103.3102,(GDL-171) C. Maquinistas / C. San Rafael *,La Paz,44860,19,10,0,9,0
+Guadalajara,239,(GDL-172) C. Chamizal / Av. Rio Nilo,20.64434,-103.30678,(GDL-172) C. Chamizal / Av. Río Nilo *,Jardines de La Paz,44860,15,3,0,12,0
+Guadalajara,240,(GDL-173) C. Caballerango / C. Caporales,20.64504,-103.30518,(GDL-173) C. Caballerango / C. Caporales *,Jardines de La Paz,44860,19,4,0,15,0
+Guadalajara,241,(GDL-174) C. Juan de Zumárraga / Av. Tepeyac,20.6641,-103.4003,(GDL-174) C. Juan de Zumárraga / Av. Tepeyac,Chapalita,44500,11,5,0,6,0
+Guadalajara,242,(GDL-175) C. Ermita / C. San Uriel,20.66234072,-103.3981344,(GDL-175) C. Ermita / C. San Uriel,Residencial Chapalita,44500,11,1,0,10,0
+Guadalajara,243,(GDL-176) C. San Bonifacio/ Paseo Benedictino,20.67276201,-103.3976249,(GDL-176) C. San Bonifacio / Paseo de los Benedictinos,Residencial Chapalita,44500,11,2,0,9,0
+Guadalajara,244,(GDL-177) C. Fray Fco Frejes / C. Fco Zarco,20.68669,-103.37657,(GDL-177) C. Fray Fco. Frejes / C. Fco. Zarco *,Santa Teresita,44600,15,0,0,15,0
+Guadalajara,246,(GDL-178) C Salvador Quevedo/C López Portillo,20.685108,-103.333746,(GDL-178) C. Salvador Quevedo / C. López Portillo *,La Natividad,44360,15,14,0,1,0
+Guadalajara,247,(GDL-179) C. Monte Cáucaso / C. Sierra Nevada,20.68795,-103.33343,(GDL-179) C. Monte Cáucaso / C. Sierra Nevada *,Independencia Oriente,44340,23,20,2,1,0
+Guadalajara,248,(GDL-180) C. Montes Pirineos/Salvador Quevedo,20.68692,-103.33467,(GDL-180) C. Montes Pirineos / C. Salvador Quevedo*,Independencia Oriente,44340,11,11,0,0,0
+Guadalajara,249,(GDL-181) C.Ignacio Rmrz / Av Plan de San Lui,20.69705,-103.36322,(GDL-181) C.Ignacio Ramírez / Av. Plan de San Luis*,San Bernardo,44260,15,14,1,0,0
+Guadalajara,253,(GDL-156) C. Duque de Rivas/ C. López Cotilla,20.6731682,-103.3826893,(GDL-156) C. Duque de Rivas / C. López Cotilla *,Arcos Vallarta,44130,15,0,0,15,0
+Guadalajara,254,(GDL-020) C. General Coronado / C.Juan Manuel,20.67848,-103.365103,(GDL-020) C. General Coronado / C. Juan Manuel,Guadalajara Centro,44100,15,3,1,11,0
+Guadalajara,255,(GDL-182) C. General Coronado / C. Manuel Acu,20.6841645,-103.3648293,(GDL-182) C. General Coronado / C. Manuel Acuña*,Villaseñor,44600,15,9,0,6,0
+Guadalajara,256,(GDL-183) Calz. Independencia / Av. Niños Hér,20.6639862,-103.3480775,(GDL-183) Calz. Independencia / Av. Niños Héroes*,Mexicaltzingo,44180,19,17,0,2,0
+Guadalajara,257,(GDL-184) Ingreso Cucei / Revolución,20.6595903,-103.324471,(GDL-184) Ingreso Cucei / Revolución,El Periodista,44430,19,4,0,15,0
+Guadalajara,258,(GDL-185) Dr. Silverio García /Av. Revolución,20.66318,-103.32942,(GDL-185) Dr. Silverio García /Av. Revolución,Revolución,44400,23,18,1,4,0
+Guadalajara,259,(GDL-186) C. Argentina / C. Francia,20.66429,-103.3628,(GDL-186) C. Argentina / C. Francia,Moderna,44190,15,7,0,8,0
+Guadalajara,260,(GDL-187) Av. 16 de Septiembre / C. Priscilia,20.67284,-103.34718,(GDL-187) Av. 16 de Septiembre / C. Prisciliano Sánchez,Guadalajara Centro,44100,15,6,0,9,0
+Guadalajara,261,(GDL-188) Av. de la Presa / Av. Manuel A. Cam,20.70928,-103.37015,(GDL-188) Av. de la Presa / Av. Manuel A. Camacho,Jardines del Country,44210,15,12,1,2,0
+Guadalajara,262,(GDL-189) C. 5 de Mayo/ Av. Revolución,20.6692,-103.34116,(GDL-189) C. 5 de Mayo/ Av. Revolución,Analco,44450,15,12,0,3,0
+Guadalajara,263,(GDL-190) C. Anahuac / Av. Revolución,20.6708,-103.34385,(GDL-190) C. Anahuac / Av. Revolución,La Perla,44360,31,30,0,1,0
+Guadalajara,264,(GDL-191) Plaza de los Mariachis,20.6744,-103.34123,(GDL-191) Plaza de los Mariachis,San Juan de Dios,44360,23,22,1,0,0
+Guadalajara,265,(GDL-192) Calle A1 / Av. Manuel A. Camacho,20.70656,-103.36564,(GDL-192) Calle A1 / Av. Manuel A. Camacho,Jardines del Country,44210,15,9,0,6,0
+Guadalajara,266,(GDL-193) C. Hawai / C. Nicolás Romero,20.70211,-103.35996,(GDL-193) C. Hawai / C. Nicolás Romero,Mezquitan,44260,15,7,1,7,0
+Guadalajara,267,(GDL-194) Av. Revolución / C. Manuel López Ve,20.65048,-103.30999,(GDL-194) Av. Revolución / C. Manuel López Velarde*,Jardines de La Paz,44860,15,12,0,3,0
+Guadalajara,268,(GDL-195) C. Ramón Corona / Av. Juárez,20.67529,-103.34656,(GDL-195) C. Ramón Corona / Av. Juárez,Guadalajara Centro,44100,23,2,1,20,0
+Guadalajara,269,(GDL-196) C. Esmeralda / C. Manuel Acuña,20.68361,-103.33756,(GDL-196) C. Esmeralda / C. Manuel Acuña,El Retiro,44280,23,21,2,0,0
+Guadalajara,270,(GDL-197) Av. Río Nilo / Av. Revolución,20.64517,-103.30313,(GDL-197) Av. Río Nilo / Av. Revolución*,Jardines de La Paz,44860,15,10,0,5,0
+Guadalajara,271,(GDL-198) Av. Alcalde / C. Hospital,20.68504,-103.34796,(GDL-198) Av. Alcalde / C. Hospital,Guadalajara Centro,44100,31,28,2,1,0
+Guadalajara,272,(GDL-199) C. Jesús García/Av. Alcalde,20.6891,-103.34806,(GDL-199) C. Jesús García/Av. Alcalde,Colinas de La Normal,44270,15,13,0,2,0
+Guadalajara,274,(GDL-201) Av. de los Normalistas / C. M. Guti,20.69442,-103.34474,(GDL-201) Av. de los Normalistas / C. M. Gutiérrez Nájera,Miraflores,44270,15,11,1,3,0
+Guadalajara,275,(GDL-202) C. Magisterio / C. Durango,20.69898,-103.34893,(GDL-202) C. Magisterio / C. Durango,Observatorio,44266,15,15,0,0,0
+Guadalajara,276,(GDL-203) Av. Federalismo / C. Tamaulipas,20.70046,-103.35478,(GDL-203) Av. Federalismo / C. Tamaulipas,El Retiro,44280,23,23,0,0,0
+Guadalajara,277,(GDL-204) C. España/ Av. Chapultepec,20.6651,-103.36807,(GDL-204) C. España/ Av. Chapultepec,Moderna,44190,23,0,0,23,0
+Guadalajara,278,(GDL-205) Av. Agustín Yáñez /C. Venezuela,20.66265,-103.36554,(GDL-205) Av. Agustín Yáñez /C. Venezuela*,Moderna,44190,15,8,0,7,0
+Guadalajara,279,(GDL-206) C. Suiza / Av. Enrique Díaz de león,20.66231,-103.36011,(GDL-206) C. Suiza / Av. Enrique Díaz de león,Moderna,44190,15,10,0,5,0
+Guadalajara,280,(GDL-207) C. Lázaro Pérez / C. Escorza,20.66563,-103.35802,(GDL-207) C. Lázaro Pérez / C. Escorza,Moderna,44190,15,14,0,1,0
+Guadalajara,281,(GDL-208) Av. España / Av. Federalismo,20.66081,-103.35704,(GDL-208) Av. España / Av. Federalismo,Moderna,44190,31,13,3,15,0
+Guadalajara,282,(GDL-209) Calz. del Campesino / Calz. Indepen,20.6605183,-103.3503245,(GDL-209) Calz. del Campesino / Calz. Independencia*,Moderna,44190,19,11,1,7,0
+Guadalajara,283,(GDL-210) Av. Washington / Calz. Independenci,20.65775,-103.35132,(GDL-210) Av. Washington / Calz. Independencia*,Moderna,44190,31,17,2,12,0
+Guadalajara,284,(GDL-211) Av. Washington / C. Rusia,20.65883,-103.35468,(GDL-211) Av. Washington / C. Rusia,Moderna,44190,15,10,1,4,0
+Guadalajara,285,(GDL-212) C. Nicolás Romero / C. Jaime Nunó,20.70047,-103.36158,(GDL-212) C. Nicolás Romero / C. Jaime Nunó*,Lomas Del Country,44610,15,7,1,7,0
+Zapopan,286,(ZPN-023) Blvrd. de la Espuela / C. Silvano B,20.73231,-103.38763,(ZPN-023) Blvrd. de la Espuela / C. Silvano Barba*,Zapopan Centro,45100,15,13,2,0,0
+Zapopan,287,(ZPN-024) C. López Cotilla / C. del Estribo,20.73076,-103.38861,(ZPN-024) C. López Cotilla / C. del Estribo,Zapopan Centro,45100,15,6,0,9,0
+Zapopan,288,(ZPN-048) Av. J. Parres Arias / Prol. López C,20.72958,-103.38859,(ZPN-048) Av. J. Parres Arias / Prol. López Cotilla*,Zapopan Centro,45100,31,3,0,28,0
+Zapopan,289,(ZPN-049) Ávila Camacho/ Lábaro Patrio,20.7178,-103.38338,(ZPN-049) Ávila Camacho/ Lábaro Patrio,Tepeyac,45150,15,13,0,2,0
+Zapopan,290,(ZPN-050) C. el Mediero / Prol. Laureles,20.73432,-103.38427,(ZPN-050) C. el Mediero / Prol. Laureles*,La Hoja Verde,45150,15,8,3,4,1
+Zapopan,291,(ZPN-051) Av. Periférico G. Morín / Av. J. Pa,20.73837,-103.38057,(ZPN-051) Av. Periférico G. Morín / Av. J. Parres Arias,San Miguel de La Cañada,45150,31,0,0,31,0
+Zapopan,292,(ZPN-052) C. del Pial / C. del Vigía,20.73245,-103.39291,(ZPN-052) C. del Pial / C. del Vigía*,El Vigía,45140,15,0,0,15,0
+Zapopan,293,(ZPN-053) Prol. Laureles / Av. Periférico G.,20.73836,-103.38299,(ZPN-053) Prol. Laureles / Av. Periférico G. Morín*,El Capullo,45150,31,24,1,6,0
+Zapopan,294,(ZPN-054) Av. J. Parres Arias / C. Ignacio Ja,20.73441,-103.38079,(ZPN-054) Av. J. Parres Arias / C. Ignacio Jacob*,Industrial los Belenes,45157,31,29,1,1,0
+Zapopan,295,(ZPN-055) Prol. Laureles / Av. J. Parres Aria,20.73154,-103.38515,(ZPN-055) Prol. Laureles / Av. J. Parres Arias*,Belenes U de G,45150,15,13,0,2,0
+Zapopan,296,(ZPN-056) Av. Manuel A. Camacho / C. San Jorg,20.71365,-103.37742,(ZPN-056) Av. Manuel A. Camacho / C. San Jorge,Villa San Jorge,45160,15,13,1,1,0
+Zapopan,91,(ZPN-001) Emilio Carranza /Carretera Tesistán,20.73244,-103.396083,(ZPN-001) C. Emilio Carranza / Carretera Tesistán *,San Isidro Ejidal,45147,15,4,0,11,0
+Zapopan,92,(ZPN-002) C. Emilio Carranza /C. Independenci,20.726376,-103.397466,(ZPN-002) C. Emilio Carranza /C. Independencia *,San Isidro Ejidal,45147,11,6,0,5,0
+Zapopan,93,(ZPN-003) C. Emilio Carranza / Av. Hidalgo,20.723081,-103.398071,(ZPN-003) C. Emilio Carranza / Av. Hidalgo *,Unidad República,45146,11,1,0,10,0
+Zapopan,95,(ZPN-005) C. Del Corral / C. Anáhuac,20.730841,-103.394267,(ZPN-005) C. Del Corral / C. Anáhuac *,Obrera Centro,45140,11,4,1,6,0
+Zapopan,96,(ZPN-006) C. Independencia / C. Anáhuac,20.725815,-103.395308,(ZPN-006) C. Independencia / C. Anáhuac *,Guadalajara Centro,45100,15,2,0,13,0
+Zapopan,98,(ZPN-008) C. Vicente Guerrero / Av. Hidalgo,20.72201,-103.39427,(ZPN-008) C. Vicente Guerrero / Av. Hidalgo *,Guadalajara Centro,45100,19,2,0,17,0
+Zapopan,100,(ZPN-010) C. Ramón Corona / C. Cuauhtémoc,20.723889,-103.394585,(ZPN-010) C. Ramón Corona / C. Cuauhtémoc *,Guadalajara Centro,45100,11,1,0,10,0
+Zapopan,101,(ZPN-011) C. Pino Suárez / C. López Cotilla,20.726558,-103.389242,(ZPN-011) C. Pino Suárez / C. López Cotilla *,Guadalajara Centro,45100,11,1,0,10,0
+Zapopan,102,(ZPN-012) C. Pino Suárez / Av. Juan Pablo II,20.728446,-103.39031,(ZPN-012) C. Pino Suárez / Av. Juan Pablo II *,Guadalajara Centro,45100,19,0,0,19,0
+Zapopan,103,(ZPN-013) C. Eva Briseño / C. Javier Mina,20.720438,-103.391894,(ZPN-013) C. Eva Briseño / C. Javier Mina*,Guadalajara Centro,45100,15,0,1,14,0
+Zapopan,104,(ZPN-014) C. Juan Manuel / Pino Suárez,20.724044,-103.390802,(ZPN-014) C. Juan Manuel / C. Pino Suárez *,Guadalajara Centro,45100,11,0,0,11,0
+Zapopan,105,(ZPN-015) C. Sarcófago / C. Panteon,20.725261,-103.387365,(ZPN-015) C. Sarcófago / C. Panteón *,Guadalajara Centro,45100,11,0,0,11,0
+Zapopan,106,(ZPN-016) Av. Hidalgo/ C. Emiliano Zapata,20.721643,-103.3902,(ZPN-016) Av. Hidalgo / C. Emiliano Zapata*,Guadalajara Centro,45100,19,0,0,19,0
+Zapopan,107,(ZPN-017) C. Juan Manuel / C. Pedro Moreno,20.72374,-103.388657,(ZPN-017) C. Juan Manuel / C. Pedro Moreno *,Guadalajara Centro,45100,15,0,0,15,0
+Zapopan,108,(ZPN-018) Av. Juan Pablo II / C. Santa Lucía,20.727068,-103.386286,(ZPN-018) Av. Juan Pablo II / C. Santa Lucía *,Seattle,45150,15,4,0,11,0
+Zapopan,110,(ZPN-020) Av. Aurelio Ortega / Av. Laureles,20.721039,-103.386942,(ZPN-020) Av. Aurelio Ortega / Av. Laureles *,Seattle,45150,15,0,0,15,0
+Zapopan,111,(ZPN-021) Blvrd. Panamericano/ C.Santa Mónica,20.72832,-103.384156,(ZPN-021) Blvr. Panamericano / C. Santa Mónica *,Seattle,45150,15,5,0,10,0
+Zapopan,112,(ZPN-022) Av. Aurelio Ortega / C. Morelos*,20.722427,-103.383,(ZPN-022) Av. Aurelio Ortega / C. Morelos*,Seattle,45150,15,12,0,3,0
+Zapopan,115,(ZPN-025) C. Pedro Moreno / C. Jesus García,20.727913,-103.388162,(ZPN-025) C. Pedro Moreno / C. Jesús García *,Guadalajara Centro,45100,15,3,0,12,0
+Zapopan,117,(ZPN-027) C. 5 de Mayo / C. Noviembre,20.720452,-103.388629,(ZPN-027) C. 5 de Mayo / C. Noviembre *,Guadalajara Centro,45100,11,0,0,11,0
+Zapopan,118,(ZPN-028) C. Ejido / C. Sabino Delgado,20.729724,-103.398598,(ZPN-028) C. Ejido / C. Sabino Delgado *,San Isidro Ejidal,45147,11,3,0,8,0
+Zapopan,119,(ZPN-029) C. La Villa / C. Cuauhtémoc,20.728147,-103.393858,(ZPN-029) C. La Villa / C. Cuauhtémoc *,San Isidro Ejidal,45147,15,8,0,7,0
+Zapopan,120,(ZPN-030) C. Francisco Sarabia / C. Libertad,20.727381,-103.399976,(ZPN-030) C. Francisco Sarabia / C. Libertad *,San Isidro Ejidal,45147,15,3,0,12,0
+Zapopan,125,(ZPN-031) C. Niño Obrero/Calz Lázaro Cárdenas,20.67342,-103.40945,(ZPN-031) C. Niño Obrero / Calz. Lázaro Cárdenas,Don Bosco Vallarta,45049,19,5,1,13,0
+Zapopan,126,(ZPN-032) Calz Lázaro Cárdenas / Av San Fco,20.67195,-103.40641,(ZPN-032) Calz. Lázaro Cárdenas / Av. San Francisco,Don Bosco Vallarta,45049,19,0,1,18,0
+Zapopan,127,(ZPN-033) Av Lázaro Cárdenas / Av San Ignacio,20.6707,-103.40458,(ZPN-033) Av. Lázaro Cárdenas / Av. San Ignacio *,Jardines del Bosque,45040,15,0,0,15,0
+Zapopan,128,(ZPN-034) C. San Demetrio / C. Niño Obrero,20.66984,-103.40968,(ZPN-034) C. San Demetrio / C. Niño Obrero,Jardines del Bosque,45040,15,5,0,10,0
+Zapopan,129,(ZPN-035) C. San Juan Bosco / Av. San Ignacio,20.66844,-103.40495,(ZPN-035) C. San Juan Bosco / Av. San Ignacio*,Jardines del Bosque,45040,11,2,0,9,0
+Zapopan,130,(ZPN-036) C. Niño Obrero /C José María Robles,20.66731,-103.40953,(ZPN-036) C. Niño Obrero / C. José María Robles,Chapalita Oriente,45040,19,1,0,18,0
+Zapopan,131,(ZPN-037) Av. San Ignacio / Av. Guadalupe,20.6668782,-103.4031329,(ZPN-037) Av. San Ignacio / Av. Guadalupe,Chapalita Oriente,45040,11,5,0,6,0
+Zapopan,132,(ZPN-038) C. Santa Rita / Av. Guadalupe,20.66581,-103.40662,(ZPN-038) C. Santa Rita / Av. Guadalupe *,Chapalita Oriente,45040,11,0,0,11,0
+Zapopan,133,(ZPN-039) Av. Niño Obrero / C. Juan Diego,20.66312806,-103.4079076,(ZPN-039) Av. Niño Obrero / C. Juan Diego,Chapalita Oriente,45040,19,7,1,11,0
+Zapopan,134,(ZPN-040) C. Santa María / C. Árbol,20.66033761,-103.4037559,(ZPN-040) C. Santa María / C. Árbol *,Chapalita Sur,45046,15,0,0,15,0
+Zapopan,135,(ZPN-041) C. 12 de Diciembre / C. Juan Diego,20.66463,-103.404,(ZPN-041) C. 12 de Diciembre / C. Juan Diego,Chapalita Oriente,45040,11,2,0,9,0
+Zapopan,136,(ZPN-042) C. Tonatiuh / Av. Netzahualcóyotl,20.65925105,-103.4065612,(ZPN-042) C. Tonatiuh / Av. Netzahualcóyotl,Ciudad Del Sol,45050,15,6,0,9,0
+Zapopan,137,(ZPN-043) C. Ermita / C. Del Árbol,20.65938,-103.40195,(ZPN-043) C. Ermita / C. Del Árbol,Chapalita Sur,45046,11,0,0,11,0
+Zapopan,139,(ZPN-045) Av. Tizoc / C. Iztaccíhuatl,20.65701,-103.40464,(ZPN-045) Av. Tizoc / C. Iztaccíhuatl,Ciudad Del Sol,45050,15,12,0,3,0
+Zapopan,140,(ZPN-046) Av. Cubilete / Av. López Mateos,20.656866,-103.397725,(ZPN-046) Av. Cubilete / Av. López Mateos,Jardines de Plaza Del Sol,44510,19,0,0,19,0
+Zapopan,141,(ZPN-047) Av. Tizoc / Av. López Mateos,20.65381,-103.40134,(ZPN-047) Av. Tizoc / Av. López Mateos,Ciudad Del Sol,45050,15,15,0,0,0
+Tlaquepaque,142,(TLQ-001) BlvrdGarcía Barragán/C. Río Tajo,20.64483,-103.31948,(TLQ-001) Blvr. García Barragán / C. Río Tajo*,Lomas Del Paradero,44840,19,19,0,0,0
+Tlaquepaque,143,(TLQ-002) C. Juárez / Av. Niños Héroes,20.6383352,-103.3163317,(TLQ-002) C. Juárez / Av. Niños Héroes,Tlaquepaque Centro,45500,15,3,0,12,0
+Tlaquepaque,144,(TLQ-003) C. Contreras Medellín/Donato Guerra,20.64193,-103.31366,(TLQ-003) C. Contreras Medellín / C. Donato Guerra *,Tlaquepaque Centro,45500,15,1,1,13,0
+Tlaquepaque,145,(TLQ-004) C. Donato Guerra / C. Obregón,20.64185,-103.3106,(TLQ-004) C. Donato Guerra / C. Obregón*,Tlaquepaque Centro,45500,15,7,0,8,0
+Tlaquepaque,146,(TLQ-005) C. Zalatitán / C. Jalisco,20.64188,-103.30651,(TLQ-005) C. Zalatitán / C. Jalisco *,Tlaquepaque Centro,45500,15,5,0,10,0
+Tlaquepaque,148,(TLQ-007) Blvrd.García Barragán/Donato Guerra,20.64176,-103.31716,(TLQ-007) Blvr. García Barragán / C. Donato Guerra,Tlaquepaque Centro,45500,15,3,0,12,0
+Tlaquepaque,149,(TLQ-008) C. Juárez / C. Francisco de Miranda,20.63841,-103.31334,(TLQ-008) C. Juárez / C. Francisco de Miranda,Tlaquepaque Centro,45500,15,3,0,12,0
+Tlaquepaque,150,(TLQ-009) C. Progreso / C. Juárez,20.63816,-103.31148,(TLQ-009) C. Progreso / C. Juárez,Tlaquepaque Centro,45500,15,5,0,10,0
+Tlaquepaque,151,(TLQ-010) C. Zaragoza / C. Emilio Carranza,20.63834,-103.30952,(TLQ-010) C. Zaragoza / C. Emilio Carranza *,Tlaquepaque Centro,45500,15,3,0,12,0
+Tlaquepaque,152,(TLQ-011) C. Jalisco / C. Hidalgo,20.63922,-103.30465,(TLQ-011) C. Jalisco / C. Hidalgo*,Tlaquepaque Centro,45500,15,9,3,3,0
+Tlaquepaque,153,(TLQ-012) C. Paseo Don Bosco / C. Tonalá,20.63613,-103.3019,(TLQ-012) C. Paseo Don Bosco / C. Tonalá *,Tlaquepaque Centro,45500,15,9,0,6,0
+Tlaquepaque,251,(TLQ-006) C. Miguel Hidalgo / Calz. Revolució,20.639042,-103.301239,(TLQ-006) C. Miguel Hidalgo / Av. Francisco Silva Romero,Tlaquepaque Pueblito,45500,15,13,0,2,0
