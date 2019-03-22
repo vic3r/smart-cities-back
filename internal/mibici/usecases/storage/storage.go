@@ -4,8 +4,9 @@ import "github.com/vic3r/smart-cities-back/internal/models"
 
 // Storage is the interface definition for the persistence layer
 type Storage interface {
-	GetNeighborhoodByID(zoneName string, neighborhoodID int64) (*models.Neighborhood, error)
+	GetStation(zoneName string, stationID int) (*models.Station, error)
+	GetNeighborhood(zoneName, neighborhoodID string) (*models.Neighborhood, error)
 	GetListNeighborhoods() ([]*models.Neighborhood, error)
 	GetListZones() ([]*models.Zone, error)
-	GetNeighborhoodsListByZone(zoneName string) ([]*models.Neighborhood, error)
+	GetStationsListByZone(zoneName string) ([]*models.Station, error)
 }

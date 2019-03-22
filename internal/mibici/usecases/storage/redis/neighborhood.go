@@ -3,68 +3,72 @@ package redis
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
 
 	"github.com/vic3r/smart-cities-back/internal/models"
 )
 
-func getNeighborhoodByID(r *redisClient, zoneName string, neighborhoodID int64) (*models.Neighborhood, error) {
+func getNeighborhood(r *redisClient, zoneName, neighborhood string) (*models.Neighborhood, error) {
 	// Query to retrieve a neighborhood
-	redisNeighborhood, err := r.client.LIndex(zoneName, neighborhoodID).Result()
+	zoneLen, err := r.client.LLen(zoneName).Result()
 	if err != nil {
-		return nil, fmt.Errorf("neighborhood not found: %v", err)
+		return nil, fmt.Errorf("zone not found: %v", err)
 	}
 
-	fmt.Println(redisNeighborhood)
-
-	nieghborhood := &models.Neighborhood{}
 	// parse byte array response to json
-	err = json.Unmarshal([]byte(redisNeighborhood), nieghborhood)
-	if err != nil {
-		return nil, fmt.Errorf("not possible to unmarshal response: %v", err)
+	stations := make([]*models.Station, 0)
+	for i := 0; i < int(zoneLen); i++ {
+		actualStation, err := r.client.LIndex(zoneName, int64(i)).Result()
+		if err != nil {
+			return nil, fmt.Errorf("station not found: %v", err)
+		}
+		if strings.Contains(actualStation, neighborhood) {
+			station := &models.Station{}
+			if err = json.NewDecoder(strings.NewReader(actualStation)).Decode(station); err != nil {
+				return nil, fmt.Errorf("failed to decode station: %v", err)
+			}
+			if station.Neighborhood == neighborhood {
+				stations = append(stations, station)
+			}
+		}
 	}
 
-	return nieghborhood, nil
+	if stations == nil {
+		return nil, fmt.Errorf("neighborhood not found")
+	}
+	return &models.Neighborhood{
+		Name:         neighborhood,
+		Municipality: stations[0].Zone,
+		Stations:     stations,
+	}, nil
 }
 
 func getNeighborhoods(r *redisClient) ([]*models.Neighborhood, error) {
-	// Query to retrieve a list of neighborhoods
-	redisZones, err := r.client.Keys("*").Result()
+	zones, err := r.client.Keys("*").Result()
 	if err != nil {
 		return nil, fmt.Errorf("zone not found: %v", err)
 	}
 
-	var neighborhoods []*models.Neighborhood
-	for _, zone := range redisZones {
-		neighborhoodsPerZone, err := getNeighborhoodsByZone(r, zone)
+	stationsDict := make(map[string][]*models.Station)
+	for i, zone := range zones {
+		actualStation, err := r.client.LIndex(zone, int64(i)).Result()
 		if err != nil {
-			return nil, err
+			return nil, fmt.Errorf("neighborhood not found: %v", err)
+		}
+		station := &models.Station{}
+		if err = json.NewDecoder(strings.NewReader(actualStation)).Decode(station); err != nil {
+			return nil, fmt.Errorf("failed to decode station: %v", err)
 		}
 
-		neighborhoods = append(neighborhoods, neighborhoodsPerZone...)
+		stationsDict[station.Neighborhood] = append(stationsDict[station.Neighborhood], station)
 	}
 
-	return neighborhoods, nil
-}
-
-func getNeighborhoodsByZone(r *redisClient, zoneName string) ([]*models.Neighborhood, error) {
-
-	zoneLength, err := r.client.LLen(zoneName).Result()
-	if err != nil {
-		return nil, fmt.Errorf("zone not found: %v", err)
-	}
-
-	redisNeighborhoods, err := r.client.LRange(zoneName, 0, zoneLength).Result()
-	if err != nil {
-		return nil, fmt.Errorf("zone range not found: %v", err)
-	}
-
-	var neighborhoods []*models.Neighborhood
-	for _, actualNeighborhood := range redisNeighborhoods {
-		neighborhood := &models.Neighborhood{}
-
-		err := json.Unmarshal([]byte(actualNeighborhood), neighborhood)
-		if err != nil {
-			return nil, fmt.Errorf("not possible to unmarshal neighborhood: %v", err)
+	neighborhoods := make([]*models.Neighborhood, 0)
+	for neighborhoodName, stations := range stationsDict {
+		neighborhood := &models.Neighborhood{
+			Name:         neighborhoodName,
+			Municipality: stations[0].Zone,
+			Stations:     stations,
 		}
 		neighborhoods = append(neighborhoods, neighborhood)
 	}

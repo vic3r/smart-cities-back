@@ -6,13 +6,22 @@ import (
 )
 
 type mockUseCases struct {
-	GetNeighborhoodFunc        func(zoneName, neighborhoodID string) (*models.Neighborhood, error)
-	GetNeighborhoodsFunc       func() ([]*models.Neighborhood, error)
-	GetNeighborhoodsByZoneFunc func(zone string) ([]*models.Neighborhood, error)
-	GetZonesFunc               func() ([]*models.Zone, error)
+	GetNeighborhoodFunc   func(zoneName, neighborhoodID string) (*models.Neighborhood, error)
+	GetNeighborhoodsFunc  func() ([]*models.Neighborhood, error)
+	GetStationsByZoneFunc func(zone string) ([]*models.Station, error)
+	GetZonesFunc          func() ([]*models.Zone, error)
+	GetStationFunc        func(zoneName, neighborhoodID string) (*models.Station, error)
 }
 
 var _ mibici.UseCases = &mockUseCases{}
+
+func (m *mockUseCases) GetStation(zoneName, stationID string) (*models.Station, error) {
+	if m == nil {
+		return nil, nil
+	}
+
+	return m.GetStationFunc(zoneName, stationID)
+}
 
 func (m *mockUseCases) GetNeighborhood(zoneName, neighborhoodID string) (*models.Neighborhood, error) {
 	if m == nil {
@@ -30,12 +39,12 @@ func (m *mockUseCases) GetNeighborhoods() ([]*models.Neighborhood, error) {
 	return m.GetNeighborhoodsFunc()
 }
 
-func (m *mockUseCases) GetNeighborhoodsByZone(zone string) ([]*models.Neighborhood, error) {
+func (m *mockUseCases) GetStationsByZone(zone string) ([]*models.Station, error) {
 	if m == nil {
 		return nil, nil
 	}
 
-	return m.GetNeighborhoodsByZone(zone)
+	return m.GetStationsByZoneFunc(zone)
 }
 
 func (m *mockUseCases) GetZones() ([]*models.Zone, error) {

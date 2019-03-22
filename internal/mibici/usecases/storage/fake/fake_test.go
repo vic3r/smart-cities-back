@@ -40,34 +40,24 @@ func TestGetNeighborhoodByID(t *testing.T) {
 	tests := []struct {
 		Name                 string
 		ZoneName             string
-		ID                   int64
+		ID                   string
 		ExpectedNeighborhood *models.Neighborhood
 		ExpectedError        error
 	}{
 		{
 			Name: "HappyPath",
-			ID:   11,
 			ExpectedNeighborhood: &models.Neighborhood{
-				ID:           11,
 				Name:         "Puerta de Hierro",
-				Latitudes:    []float32{1.5, 3.0},
-				Longitudes:   []float32{2.4, 1.3},
 				Municipality: "Zapopan",
 				Stations: []*models.Station{
 					&models.Station{
-						ID:             1,
-						NeighborhoodID: 11,
-						BikesQuantity:  8,
+						ID: "1",
 					},
 					&models.Station{
-						ID:             2,
-						NeighborhoodID: 11,
-						BikesQuantity:  6,
+						ID: "2",
 					},
 					&models.Station{
-						ID:             3,
-						NeighborhoodID: 11,
-						BikesQuantity:  10,
+						ID: "3",
 					},
 				},
 			},
@@ -88,7 +78,7 @@ func TestGetNeighborhoodByID(t *testing.T) {
 				assert.EqualError(t, err, test.ExpectedError.Error())
 			}
 
-			neighborhood, err := storage.GetNeighborhoodByID(test.Name, test.ID)
+			neighborhood, err := storage.GetNeighborhood(test.Name, test.ID)
 			if err == nil {
 				assert.NoError(t, err)
 				assert.Equal(t, test.ExpectedNeighborhood, neighborhood)
@@ -109,50 +99,33 @@ func TestGetListNeighborhoods(t *testing.T) {
 			Name: "HappyPath",
 			ExpectedNeighborhoods: []*models.Neighborhood{
 				&models.Neighborhood{
-					ID:           11,
-					Name:         "Puerta de Hierro",
-					Latitudes:    []float32{1.5, 3.0},
-					Longitudes:   []float32{2.4, 1.3},
+					Name: "Puerta de Hierro",
+
 					Municipality: "Zapopan",
 					Stations: []*models.Station{
 						&models.Station{
-							ID:             1,
-							NeighborhoodID: 11,
-							BikesQuantity:  8,
+							ID: "1",
 						},
 						&models.Station{
-							ID:             2,
-							NeighborhoodID: 11,
-							BikesQuantity:  6,
+							ID: "2",
 						},
 						&models.Station{
-							ID:             3,
-							NeighborhoodID: 11,
-							BikesQuantity:  10,
+							ID: "3",
 						},
 					},
 				},
 				&models.Neighborhood{
-					ID:           12,
 					Name:         "San Juan de Ocotan",
-					Latitudes:    []float32{4.5, -1.0},
-					Longitudes:   []float32{5.4, 4.3},
 					Municipality: "Zapopan",
 					Stations: []*models.Station{
 						&models.Station{
-							ID:             21,
-							NeighborhoodID: 12,
-							BikesQuantity:  9,
+							ID: "21",
 						},
 						&models.Station{
-							ID:             22,
-							NeighborhoodID: 12,
-							BikesQuantity:  6,
+							ID: "22",
 						},
 						&models.Station{
-							ID:             23,
-							NeighborhoodID: 12,
-							BikesQuantity:  8,
+							ID: "23",
 						},
 					},
 				},

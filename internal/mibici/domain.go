@@ -21,8 +21,9 @@ func NewDomain(usecases UseCases) (*Domain, error) {
 
 // Controller specifies each router pathprefix and each endpoint function
 func (d *Domain) Controller(router *gin.Engine) {
+	router.GET("mibici/zone/:zone_name/station/:id", d.controller.GetStation)
 	router.GET("mibici/neighborhoods", d.controller.GetNeighborhoods)
 	router.GET("mibici/zone/:zone_name/neighborhood/:id", d.controller.GetNeighborhood)
-	router.GET("mibici/neighborhoodsByZone/:zone_name", d.controller.GetNeighborhoodsByZone)
+	router.GET("mibici/stations/zone/:zone_name", d.controller.GetStationsByZone)
 	router.GET("mibici/zones", d.controller.GetZones)
 }

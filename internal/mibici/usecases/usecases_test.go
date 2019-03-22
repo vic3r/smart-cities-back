@@ -43,7 +43,6 @@ func TestNew(t *testing.T) {
 		})
 	}
 }
-
 func TestGetNeighborhood(t *testing.T) {
 	tests := []struct {
 		Name                 string
@@ -57,34 +56,24 @@ func TestGetNeighborhood(t *testing.T) {
 			Name:           "HappyPath",
 			NeighborhoodID: "11",
 			Storage: &mockStorage{
-				GetNeighborhoodByIDFunc: func(string, int64) (*models.Neighborhood, error) {
+				GetNeighborhoodFunc: func(string, string) (*models.Neighborhood, error) {
 					return &models.Neighborhood{
-						ID:           11,
 						Name:         "Puerta de Hierro",
-						Latitudes:    []float32{1.5, 3.0},
-						Longitudes:   []float32{2.4, 1.3},
 						Municipality: "Zapopan",
 						Stations: []*models.Station{
 							&models.Station{
-								ID:             1,
-								NeighborhoodID: 11,
-								BikesQuantity:  8,
+								ID: "1",
 							},
 						},
 					}, nil
 				},
 			},
 			ExpectedNeighborhood: &models.Neighborhood{
-				ID:           11,
 				Name:         "Puerta de Hierro",
-				Latitudes:    []float32{1.5, 3.0},
-				Longitudes:   []float32{2.4, 1.3},
 				Municipality: "Zapopan",
 				Stations: []*models.Station{
 					&models.Station{
-						ID:             1,
-						NeighborhoodID: 11,
-						BikesQuantity:  8,
+						ID: "1",
 					},
 				},
 			},
@@ -94,7 +83,7 @@ func TestGetNeighborhood(t *testing.T) {
 			Name:           "InvalidNeighborhoodID",
 			NeighborhoodID: "a",
 			Storage: &mockStorage{
-				GetNeighborhoodByIDFunc: func(string, int64) (*models.Neighborhood, error) {
+				GetNeighborhoodFunc: func(string, string) (*models.Neighborhood, error) {
 					return nil, errors.New("not possible to parse neighborhood_id")
 				},
 			},
@@ -105,7 +94,7 @@ func TestGetNeighborhood(t *testing.T) {
 			Name:           "UnexpectedError",
 			NeighborhoodID: "11",
 			Storage: &mockStorage{
-				GetNeighborhoodByIDFunc: func(string, int64) (*models.Neighborhood, error) {
+				GetNeighborhoodFunc: func(string, string) (*models.Neighborhood, error) {
 					return nil, errors.New("server error")
 				},
 			},
@@ -150,16 +139,11 @@ func TestGetNeighborhoods(t *testing.T) {
 				GetListNeighborhoodsFunc: func() ([]*models.Neighborhood, error) {
 					return []*models.Neighborhood{
 						&models.Neighborhood{
-							ID:           11,
 							Name:         "Puerta de Hierro",
-							Latitudes:    []float32{1.5, 3.0},
-							Longitudes:   []float32{2.4, 1.3},
 							Municipality: "Zapopan",
 							Stations: []*models.Station{
 								&models.Station{
-									ID:             1,
-									NeighborhoodID: 11,
-									BikesQuantity:  8,
+									ID: "1",
 								},
 							},
 						},
@@ -168,16 +152,11 @@ func TestGetNeighborhoods(t *testing.T) {
 			},
 			ExpectedNeighborhoods: []*models.Neighborhood{
 				&models.Neighborhood{
-					ID:           11,
 					Name:         "Puerta de Hierro",
-					Latitudes:    []float32{1.5, 3.0},
-					Longitudes:   []float32{2.4, 1.3},
 					Municipality: "Zapopan",
 					Stations: []*models.Station{
 						&models.Station{
-							ID:             1,
-							NeighborhoodID: 11,
-							BikesQuantity:  8,
+							ID: "1",
 						},
 					},
 				},

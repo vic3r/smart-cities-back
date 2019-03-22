@@ -6,20 +6,29 @@ import (
 )
 
 type mockStorage struct {
-	GetNeighborhoodByIDFunc        func(zoneName string, neighborhoodID int64) (*models.Neighborhood, error)
-	GetListNeighborhoodsFunc       func() ([]*models.Neighborhood, error)
-	GetListZonesFunc               func() ([]*models.Zone, error)
-	GetNeighborhoodsListByZoneFunc func(zoneName string) ([]*models.Neighborhood, error)
+	GetNeighborhoodFunc       func(zoneName, neighborhoodID string) (*models.Neighborhood, error)
+	GetListNeighborhoodsFunc  func() ([]*models.Neighborhood, error)
+	GetListZonesFunc          func() ([]*models.Zone, error)
+	GetStationsListByZoneFunc func(zoneName string) ([]*models.Station, error)
+	GetStationFunc            func(zoneName string, statID int) (*models.Station, error)
 }
 
 var _ storage.Storage = &mockStorage{}
 
-func (m *mockStorage) GetNeighborhoodByID(zoneName string, neighborhoodID int64) (*models.Neighborhood, error) {
+func (m *mockStorage) GetStation(zoneName string, statID int) (*models.Station, error) {
 	if m == nil {
 		return nil, nil
 	}
 
-	return m.GetNeighborhoodByIDFunc(zoneName, neighborhoodID)
+	return m.GetStationFunc(zoneName, statID)
+}
+
+func (m *mockStorage) GetNeighborhood(zoneName, neighborhoodID string) (*models.Neighborhood, error) {
+	if m == nil {
+		return nil, nil
+	}
+
+	return m.GetNeighborhoodFunc(zoneName, neighborhoodID)
 }
 
 func (m *mockStorage) GetListNeighborhoods() ([]*models.Neighborhood, error) {
@@ -38,10 +47,10 @@ func (m *mockStorage) GetListZones() ([]*models.Zone, error) {
 	return m.GetListZonesFunc()
 }
 
-func (m *mockStorage) GetNeighborhoodsListByZone(zoneName string) ([]*models.Neighborhood, error) {
+func (m *mockStorage) GetStationsListByZone(zoneName string) ([]*models.Station, error) {
 	if m == nil {
 		return nil, nil
 	}
 
-	return m.GetNeighborhoodsListByZoneFunc(zoneName)
+	return m.GetStationsListByZoneFunc(zoneName)
 }

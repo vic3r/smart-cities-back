@@ -1,8 +1,6 @@
 package fake
 
 import (
-	"time"
-
 	"github.com/vic3r/smart-cities-back/internal/mibici/usecases/storage"
 	"github.com/vic3r/smart-cities-back/internal/models"
 )
@@ -18,29 +16,26 @@ func New() (storage.Storage, error) {
 	return &fake{}, nil
 }
 
+// GetStation returns a station
+func (f *fake) GetStation(zoneName string, statID int) (*models.Station, error) {
+
+	return &models.Station{}, nil
+}
+
 // GetNeighborhoodByID returns a neighborhood
-func (f *fake) GetNeighborhoodByID(string, int64) (*models.Neighborhood, error) {
+func (f *fake) GetNeighborhood(string, string) (*models.Neighborhood, error) {
 	return &models.Neighborhood{
-		ID:           11,
 		Name:         "Puerta de Hierro",
-		Latitudes:    []float32{1.5, 3.0},
-		Longitudes:   []float32{2.4, 1.3},
 		Municipality: "Zapopan",
 		Stations: []*models.Station{
 			&models.Station{
-				ID:             1,
-				NeighborhoodID: 11,
-				BikesQuantity:  8,
+				ID: "1",
 			},
 			&models.Station{
-				ID:             2,
-				NeighborhoodID: 11,
-				BikesQuantity:  6,
+				ID: "2",
 			},
 			&models.Station{
-				ID:             3,
-				NeighborhoodID: 11,
-				BikesQuantity:  10,
+				ID: "3",
 			},
 		},
 	}, nil
@@ -50,50 +45,32 @@ func (f *fake) GetNeighborhoodByID(string, int64) (*models.Neighborhood, error) 
 func (f *fake) GetListNeighborhoods() ([]*models.Neighborhood, error) {
 	return []*models.Neighborhood{
 		&models.Neighborhood{
-			ID:           11,
 			Name:         "Puerta de Hierro",
-			Latitudes:    []float32{1.5, 3.0},
-			Longitudes:   []float32{2.4, 1.3},
 			Municipality: "Zapopan",
 			Stations: []*models.Station{
 				&models.Station{
-					ID:             1,
-					NeighborhoodID: 11,
-					BikesQuantity:  8,
+					ID: "1",
 				},
 				&models.Station{
-					ID:             2,
-					NeighborhoodID: 11,
-					BikesQuantity:  6,
+					ID: "2",
 				},
 				&models.Station{
-					ID:             3,
-					NeighborhoodID: 11,
-					BikesQuantity:  10,
+					ID: "3",
 				},
 			},
 		},
 		&models.Neighborhood{
-			ID:           12,
 			Name:         "San Juan de Ocotan",
-			Latitudes:    []float32{4.5, -1.0},
-			Longitudes:   []float32{5.4, 4.3},
 			Municipality: "Zapopan",
 			Stations: []*models.Station{
 				&models.Station{
-					ID:             21,
-					NeighborhoodID: 12,
-					BikesQuantity:  9,
+					ID: "21",
 				},
 				&models.Station{
-					ID:             22,
-					NeighborhoodID: 12,
-					BikesQuantity:  6,
+					ID: "22",
 				},
 				&models.Station{
-					ID:             23,
-					NeighborhoodID: 12,
-					BikesQuantity:  8,
+					ID: "23",
 				},
 			},
 		},
@@ -108,56 +85,32 @@ func (f *fake) GetListZones() ([]*models.Zone, error) {
 			Name: "zapopan",
 			Neighborhoods: []*models.Neighborhood{
 				&models.Neighborhood{
-					ID:           11,
 					Name:         "Puerta de Hierro",
-					Latitudes:    []float32{1.5, 3.0},
-					Longitudes:   []float32{2.4, 1.3},
 					Municipality: "Zapopan",
 					Stations: []*models.Station{
 						&models.Station{
-							ID:             1,
-							NeighborhoodID: 11,
-							BikesQuantity:  8,
-							Date:           time.Now(),
+							ID: "1",
 						},
 						&models.Station{
-							ID:             2,
-							NeighborhoodID: 11,
-							BikesQuantity:  6,
-							Date:           time.Now(),
+							ID: "2",
 						},
 						&models.Station{
-							ID:             3,
-							NeighborhoodID: 11,
-							BikesQuantity:  10,
-							Date:           time.Now(),
+							ID: "3",
 						},
 					},
 				},
 				&models.Neighborhood{
-					ID:           12,
 					Name:         "San Juan de Ocotan",
-					Latitudes:    []float32{4.5, -1.0},
-					Longitudes:   []float32{5.4, 4.3},
 					Municipality: "Zapopan",
 					Stations: []*models.Station{
 						&models.Station{
-							ID:             21,
-							NeighborhoodID: 12,
-							BikesQuantity:  9,
-							Date:           time.Now(),
+							ID: "21",
 						},
 						&models.Station{
-							ID:             22,
-							NeighborhoodID: 12,
-							BikesQuantity:  6,
-							Date:           time.Now(),
+							ID: "22",
 						},
 						&models.Station{
-							ID:             23,
-							NeighborhoodID: 12,
-							BikesQuantity:  8,
-							Date:           time.Now(),
+							ID: "23",
 						},
 					},
 				},
@@ -167,55 +120,8 @@ func (f *fake) GetListZones() ([]*models.Zone, error) {
 }
 
 // GetZoneByID returns a particular zone
-func (f *fake) GetNeighborhoodsListByZone(zoneName string) ([]*models.Neighborhood, error) {
-	return []*models.Neighborhood{
-		&models.Neighborhood{
-			ID:           11,
-			Name:         "Puerta de Hierro",
-			Latitudes:    []float32{1.5, 3.0},
-			Longitudes:   []float32{2.4, 1.3},
-			Municipality: "Zapopan",
-			Stations: []*models.Station{
-				&models.Station{
-					ID:             1,
-					NeighborhoodID: 11,
-					BikesQuantity:  8,
-				},
-				&models.Station{
-					ID:             2,
-					NeighborhoodID: 11,
-					BikesQuantity:  6,
-				},
-				&models.Station{
-					ID:             3,
-					NeighborhoodID: 11,
-					BikesQuantity:  10,
-				},
-			},
-		},
-		&models.Neighborhood{
-			ID:           12,
-			Name:         "San Juan de Ocotan",
-			Latitudes:    []float32{4.5, -1.0},
-			Longitudes:   []float32{5.4, 4.3},
-			Municipality: "Zapopan",
-			Stations: []*models.Station{
-				&models.Station{
-					ID:             21,
-					NeighborhoodID: 12,
-					BikesQuantity:  9,
-				},
-				&models.Station{
-					ID:             22,
-					NeighborhoodID: 12,
-					BikesQuantity:  6,
-				},
-				&models.Station{
-					ID:             23,
-					NeighborhoodID: 12,
-					BikesQuantity:  8,
-				},
-			},
-		},
+func (f *fake) GetStationsListByZone(zoneName string) ([]*models.Station, error) {
+	return []*models.Station{
+		&models.Station{},
 	}, nil
 }

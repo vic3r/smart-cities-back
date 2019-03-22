@@ -26,13 +26,23 @@ func New(storage storage.Storage) (mibici.UseCases, error) {
 	return &defaultUseCases{storage: storage}, nil
 }
 
+func (u *defaultUseCases) GetStation(zoneName, stationID string) (*models.Station, error) {
+	statID, err := strconv.Atoi(stationID)
+	if err != nil {
+		return nil, errors.New("not possible to parse station_id")
+	}
+	station, err := u.storage.GetStation(zoneName, statID)
+	if err != nil {
+		return nil, fmt.Errorf("unexpected error %v", err)
+	}
+	fmt.Println(station)
+
+	return station, nil
+}
+
 // GetNeighborhood returns a neighborhood
 func (u *defaultUseCases) GetNeighborhood(zoneName, neighborhoodID string) (*models.Neighborhood, error) {
-	nbhoodID, err := strconv.Atoi(neighborhoodID)
-	if err != nil {
-		return nil, errors.New("not possible to parse neighborhood_id")
-	}
-	neighborhood, err := u.storage.GetNeighborhoodByID(zoneName, int64(nbhoodID))
+	neighborhood, err := u.storage.GetNeighborhood(zoneName, neighborhoodID)
 	if err != nil {
 		return nil, fmt.Errorf("unexpected error %v", err)
 	}
@@ -51,13 +61,13 @@ func (u *defaultUseCases) GetNeighborhoods() ([]*models.Neighborhood, error) {
 }
 
 //GetZones returns a list of zones within a city
-func (u *defaultUseCases) GetNeighborhoodsByZone(zoneName string) ([]*models.Neighborhood, error) {
-	neighborhoods, err := u.storage.GetNeighborhoodsListByZone(zoneName)
+func (u *defaultUseCases) GetStationsByZone(zoneName string) ([]*models.Station, error) {
+	stations, err := u.storage.GetStationsListByZone(zoneName)
 	if err != nil {
 		return nil, fmt.Errorf("unexpected error %v", err)
 	}
 
-	return neighborhoods, nil
+	return stations, nil
 }
 
 func (u *defaultUseCases) GetZones() ([]*models.Zone, error) {

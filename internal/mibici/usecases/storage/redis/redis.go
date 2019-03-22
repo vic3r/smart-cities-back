@@ -19,10 +19,16 @@ func New(client *redis.Client) (storage.Storage, error) {
 	return &redisClient{client}, nil
 }
 
-// GetNeighborhoodByID returns a neighborhood
-func (c *redisClient) GetNeighborhoodByID(zoneName string, neighborhoodID int64) (*models.Neighborhood, error) {
+// GetStation returns a station
+func (c *redisClient) GetStation(zoneName string, stationID int) (*models.Station, error) {
 
-	return getNeighborhoodByID(c, zoneName, neighborhoodID)
+	return getStation(c, zoneName, stationID)
+}
+
+// GetNeighborhoodByID returns a neighborhood
+func (c *redisClient) GetNeighborhood(zoneName string, neighborhood string) (*models.Neighborhood, error) {
+
+	return getNeighborhood(c, zoneName, neighborhood)
 }
 
 // GetListNeighborhoods returns a neighborhood list
@@ -31,10 +37,10 @@ func (c *redisClient) GetListNeighborhoods() ([]*models.Neighborhood, error) {
 	return getNeighborhoods(c)
 }
 
-// GetNeighborhoodsListByZone returns a list of neighborhoods per zone
-func (c *redisClient) GetNeighborhoodsListByZone(zoneName string) ([]*models.Neighborhood, error) {
+// GetStationsListByZone returns a list of neighborhoods per zone
+func (c *redisClient) GetStationsListByZone(zoneName string) ([]*models.Station, error) {
 
-	return getNeighborhoodsByZone(c, zoneName)
+	return getStationsByZone(c, zoneName)
 }
 
 // GetListZones returns a list of zones
