@@ -1,4 +1,4 @@
-# Mi Bici Station Service
+# MiBici Station Service
 
 This project is related with MiBici platform, it encourages another ways to move around the city, in this case they want more people to use bikes instead of using public transport or vehicles. The headquarters are currently located in Guadalajara.
 
