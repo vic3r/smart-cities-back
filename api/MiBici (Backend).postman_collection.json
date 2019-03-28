@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "8f6a17b1-0780-4e9f-9662-16065d81c3a1",
+		"name": "MiBici (Backend)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Zones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{SCHEME}}://{{HOST}}:{{PORT}}/mibici/zones",
+					"protocol": "{{SCHEME}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"mibici",
+						"zones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stations by Zone",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{SCHEME}}://{{HOST}}:{{PORT}}/mibici/stations/zone/:zone_name",
+					"protocol": "{{SCHEME}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"mibici",
+						"stations",
+						"zone",
+						":zone_name"
+					],
+					"variable": [
+						{
+							"key": "zone_name",
+							"value": "Zapopan"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Station",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{SCHEME}}://{{HOST}}:{{PORT}}/mibici/zone/:zone_name/station/:id",
+					"protocol": "{{SCHEME}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"mibici",
+						"zone",
+						":zone_name",
+						"station",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "zone_name",
+							"value": "Zapopan"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Neighborhood by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{SCHEME}}://{{HOST}}:{{PORT}}/mibici/zone/:zone_name/neighborhood/:name",
+					"protocol": "{{SCHEME}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"mibici",
+						"zone",
+						":zone_name",
+						"neighborhood",
+						":name"
+					],
+					"variable": [
+						{
+							"key": "zone_name",
+							"value": "Zapopan"
+						},
+						{
+							"key": "name",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Neighborhoods // partially working",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{SCHEME}}://{{HOST}}:{{PORT}}/mibici/neighborhoods",
+					"protocol": "{{SCHEME}}",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"mibici",
+						"neighborhoods"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
