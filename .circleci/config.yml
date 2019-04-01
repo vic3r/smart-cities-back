@@ -1,24 +1,28 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/victor
+    working_directory: &working_directory
+      go/src/github.com/vic3r/smart-cities-back
     docker:
       - image: circleci/golang:1.11
     steps:
       - checkout
       - run:
           name: Install dep
-          command: 'go get -u github.com/golang/dep/cmd/dep'
+          command: go get -u github.com/golang/dep/cmd/dep
       - run:
           name: Install dependencies
           command: dep ensure
-  test:
+      - run:
+          name: Install golang-lint
+          command: go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
+  lint:
     docker:
       - image: circleci/golang:1.11
     steps:
       - checkout
       - run:
-          name: Test
+          name: Check style
           command: golangci-lint run
 
 workflows:
@@ -26,7 +30,7 @@ workflows:
   build_and_test:
     jobs:
       - build
-      - test:
+      - lint:
           requires:
             - build
           filters:

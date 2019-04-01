@@ -14,7 +14,7 @@ RUN git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/".
 RUN dep ensure -vendor-only
 
 WORKDIR /go/src/github.com/vic3r/smart-cities-back
-RUN CGO_ENABLED=1 go build -i 
+RUN CGO_ENABLED=1 go build -i ./cmd/mibici
 
 FROM alpine
 
@@ -27,4 +27,4 @@ WORKDIR /app
 COPY --from=build-env /go/src/github.com/vic3r/smart-cities-back /app/
 COPY config/* /app/config/
 
-ENTRYPOINT ./mibici
+ENTRYPOINT ./mibici -ConfigDir=config -ConfigType=yaml
