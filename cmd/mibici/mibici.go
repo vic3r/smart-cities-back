@@ -31,8 +31,14 @@ func createMibiciDomain(dbService db.Service) (*mibici.Domain, error) {
 		log.Fatalf("error creating mibici usecases instance: %v \n", err)
 	}
 
+	// read mibici storage config
+	populatorURL := viper.Get("domains.mibici.populator.url").(string)
+	if populatorURL == "" {
+		log.Fatal("error loading populator url \n")
+	}
+
 	// create mibici domain instance
-	mibiciDomain, err := mibici.NewDomain(mibiciUsecases)
+	mibiciDomain, err := mibici.NewDomain(mibiciUsecases, populatorURL)
 	if err != nil {
 		log.Fatalf("error creating mibici domain instance: %v \n", err)
 	}

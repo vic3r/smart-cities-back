@@ -11,3 +11,5 @@ domains:
       database: "DB_NAME"
       username: "DB_USERNAME"
       password: "DB_PASSWORD"
+    populator:
+      url: "POPULATOR_URL"

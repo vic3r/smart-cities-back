@@ -3,6 +3,8 @@ package mibici
 import (
 	"errors"
 	"fmt"
+	"io/ioutil"
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -10,20 +12,44 @@ import (
 
 // Controller is a public controller in where is handled every gin endpoint
 type Controller struct {
-	usecases UseCases
+	usecases     UseCases
+	populatorURL string
 }
 
 // NewController creates a Controller
-func newController(usecases UseCases) (*Controller, error) {
+func newController(usecases UseCases, populatorURL string) (*Controller, error) {
 	if usecases == nil {
 		return nil, errors.New("nil usecases")
 	}
+	if populatorURL == "" {
+		return nil, errors.New("nil populator url")
+	}
 
-	return &Controller{usecases}, nil
+	return &Controller{usecases, populatorURL}, nil
+}
+
+func (c *Controller) refreshDB() error {
+	response, err := http.Get(c.populatorURL)
+	if err != nil {
+		return err
+	}
+	defer response.Body.Close()
+
+	body, err := ioutil.ReadAll(response.Body)
+	if err != nil {
+		return err
+	}
+
+	fmt.Println(string(body))
+	return nil
 }
 
 // GetStation returns a json with a particular station
 func (c *Controller) GetStation(ctx *gin.Context) {
+	if err := c.refreshDB(); err != nil {
+		log.Println("unable to refresh db: ", err)
+	}
+
 	zoneName := ctx.Param("zone_name")
 	stationID := ctx.Param("id")
 	if stationID == "" {
@@ -49,6 +75,10 @@ func (c *Controller) GetStation(ctx *gin.Context) {
 
 // GetNeighborhoods returns a json with a list of neighborhoods
 func (c *Controller) GetNeighborhoods(ctx *gin.Context) {
+	if err := c.refreshDB(); err != nil {
+		log.Println("unable to refresh db: ", err)
+	}
+
 	neighborhoods, err := c.usecases.GetNeighborhoods()
 	if err != nil {
 		// TODO: handle errors properly
@@ -62,6 +92,10 @@ func (c *Controller) GetNeighborhoods(ctx *gin.Context) {
 
 // GetNeighborhood returns a json with a particular neighborhood
 func (c *Controller) GetNeighborhood(ctx *gin.Context) {
+	if err := c.refreshDB(); err != nil {
+		log.Println("unable to refresh db: ", err)
+	}
+
 	zoneName := ctx.Param("zone_name")
 	neighborhoodID := ctx.Param("name")
 
@@ -89,6 +123,10 @@ func (c *Controller) GetNeighborhood(ctx *gin.Context) {
 
 //GetStationsByZone returns a json with a particular zone
 func (c *Controller) GetStationsByZone(ctx *gin.Context) {
+	if err := c.refreshDB(); err != nil {
+		log.Println("unable to refresh db: ", err)
+	}
+
 	zoneName := ctx.Param("zone_name")
 
 	if zoneName == "" {
@@ -109,6 +147,9 @@ func (c *Controller) GetStationsByZone(ctx *gin.Context) {
 
 //GetZones returns a json with all zones
 func (c *Controller) GetZones(ctx *gin.Context) {
+	if err := c.refreshDB(); err != nil {
+		log.Println("unable to refresh db: ", err)
+	}
 
 	// TODO: handle errors properly
 	zones, err := c.usecases.GetZones()

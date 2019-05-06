@@ -10,8 +10,8 @@ type Domain struct {
 }
 
 // NewDomain creates a new mibici domain
-func NewDomain(usecases UseCases) (*Domain, error) {
-	controller, err := newController(usecases)
+func NewDomain(usecases UseCases, populatorURL string) (*Domain, error) {
+	controller, err := newController(usecases, populatorURL)
 	if err != nil {
 		return nil, err
 	}
