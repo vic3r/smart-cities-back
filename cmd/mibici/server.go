@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/rs/cors"
 	"github.com/spf13/viper"
 	"github.com/vic3r/smart-cities-back/internal/mibici"
 )
@@ -20,5 +22,7 @@ func runServer(mibiciDomain *mibici.Domain) {
 
 	// create address and run the server
 	address := fmt.Sprintf("%s:%d", host, port)
-	router.Run(address)
+	handler := cors.Default().Handler(router)
+
+	http.ListenAndServe(address, handler)
 }

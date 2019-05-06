@@ -146,6 +146,14 @@
   version = "v1.0.0"
 
 [[projects]]
+  digest = "1:b0c25f00bad20d783d259af2af8666969e2fc343fa0dc9efe52936bbd67fb758"
+  name = "github.com/rs/cors"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "9a47f48565a795472d43519dd49aac781f3034fb"
+  version = "v1.6.0"
+
+[[projects]]
   digest = "1:3e39bafd6c2f4bf3c76c3bfd16a2e09e016510ad5db90dc02b88e2f565d6d595"
   name = "github.com/spf13/afero"
   packages = [
@@ -250,6 +258,7 @@
     "github.com/gin-gonic/gin",
     "github.com/go-redis/redis",
     "github.com/mitchellh/mapstructure",
+    "github.com/rs/cors",
     "github.com/spf13/viper",
     "github.com/stretchr/testify/assert",
   ]
